@@ -1,14 +1,20 @@
 ## Prosta i płaszczyzna w przestrzeni
 
-1. Sprawdź, czy prosta dana parametrycznie
+### Zad 1. 
+
+Sprawdź, czy prosta dana parametrycznie
 
 $$\ell: \; x=1+2t,\; y= -1+t,\; z=3- t$$
 
-   przecina płaszczyznę $\pi: 2x-y+z-4=0$. Jeżeli tak, podaj punkt przecięcia.
+przecina płaszczyznę $\pi: 2x-y+z-4=0$. Jeżeli tak, podaj punkt przecięcia.
 
-2. $\star$ Oblicz odległość punktu $G(2,-1,0)$ od prostej przechodzącej przez punkty $H(0,0,0)$ i $I(1,1,1)$.
+### Zad 2. 
 
-3. $\star$ Rozważ układ prostej i płaszczyzny zależny od parametru $\lambda$:
+$\star$ Oblicz odległość punktu $G(2,-1,0)$ od prostej przechodzącej przez punkty $H(0,0,0)$ i $I(1,1,1)$.
+
+### Zad 3. 
+
+$\star$ Rozważ układ prostej i płaszczyzny zależny od parametru $\lambda$:
 
 $$\ell(\lambda): x=\lambda+t,\; y=1+2t,\; z=2-t$$
 
