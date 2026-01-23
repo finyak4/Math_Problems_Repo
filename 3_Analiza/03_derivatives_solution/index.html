@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/3_Analiza/03_derivatives_solution/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>3. Derivatives - Math Problems</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "3. Derivatives";
+        var mkdocs_page_input_path = "en\\3_Analiza\\03_derivatives_solution.md";
+        var mkdocs_page_url = "/Math_Problems_Repo/3_Analiza/03_derivatives_solution/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math Problems
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Algebra</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1_Algebra/01_matrices_and_operations_solution/">1. Matrices & Operations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1_Algebra/02_determinants_solution/">2. Determinants</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1_Algebra/03_matrix_inversion_solution/">3. Matrix Inversion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1_Algebra/04_systems_of_equations_solution/">4. Systems of Equations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/01_vectors_solution/">1. Vectors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/02_lines_solution/">2. Lines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/03_planes_solution/">3. Planes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/04_line_and_plane_solution/">4. Line and Plane</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Analysis</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../01_sequence_limits_solution/">1. Sequence Limits</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02_function_limits_solution/">2. Function Limits</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">3. Derivatives</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ex-1-calculate-derivatives">Ex 1. Calculate derivatives</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04_function_analysis_solution/">4. Function Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05_integrals_solution/">5. Integrals</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math Problems</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Analysis</li>
+      <li class="breadcrumb-item active">3. Derivatives</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="derivatives-solutions">Derivatives - Solutions</h2>
+<h3 id="ex-1-calculate-derivatives">Ex 1. Calculate derivatives</h3>
+<p><strong>1)</strong> <span class="arithmatex">\(y = \frac{1}{3}x^3 - \frac{3}{2}x^4 + \frac{13}{5}x^5 - 2x^6\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = x^2 - 6x^3 + 13x^4 - 12x^5\)</span>$</p>
+<p><strong>2)</strong> <span class="arithmatex">\(y = 5x^{15} - x^2 + \frac{1}{3}x - 2\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = 75x^{14} - 2x + \frac{1}{3}\)</span>$</p>
+<p><strong>3)</strong> <span class="arithmatex">\(y = ax^3 + \frac{b}{x} + c\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = 3ax^2 - \frac{b}{x^2}\)</span>$</p>
+<p><strong>4)</strong> <span class="arithmatex">\(y = \frac{4}{x^3}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = -12x^{-4}\)</span>$</p>
+<p><strong>5)</strong> <span class="arithmatex">\(y = 9x^7 + 3x^{-5} - 3x^{-11}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = 63x^6 - 15x^{-6} + 33x^{-12}\)</span>$</p>
+<p><strong>6)</strong> <span class="arithmatex">\(y = 3x^{7/3} - 4x^{13/4} + \frac{4}{7}x^{-1/2} + 7^{3/2}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = 7x^{4/3} - 13x^{9/4} - \frac{2}{7}x^{-3/2}\)</span>$</p>
+<p><strong>7)</strong> <span class="arithmatex">\(y = \sqrt[3]{x^2}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{2}{3}x^{-1/3}\)</span>$</p>
+<p><strong>8)</strong> <span class="arithmatex">\(y = 5\sqrt[3]{x^7}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{35}{3}x^{4/3}\)</span>$</p>
+<p><strong>9)</strong> <span class="arithmatex">\(y = 3\sqrt[3]{x} - x^3 + \frac{2}{3}\sqrt[3]{x^4}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = x^{-2/3} - 3x^2 + \frac{8}{9}x^{1/3}\)</span>$</p>
+<p><strong>10)</strong> <span class="arithmatex">\(y = \sqrt{x} - 5\sqrt[3]{x^2} - 2\sqrt{x^3}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{1}{2\sqrt{x}} - \frac{10}{3\sqrt[3]{x}} - 3\sqrt{x}\)</span>$</p>
+<p><strong>11)</strong> <span class="arithmatex">\(y = \frac{2}{\sqrt{x}} - \frac{3}{\sqrt{x^3}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = -x^{-3/2} + \frac{9}{2}x^{-5/2}\)</span>$</p>
+<p><strong>12)</strong> <span class="arithmatex">\(y = \frac{5}{7\sqrt[3]{x}} - 2x^7 + \frac{3}{2\sqrt{x}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = -\frac{5}{21}x^{-4/3} - 14x^6 - \frac{3}{4}x^{-3/2}\)</span>$</p>
+<p><strong>13)</strong> <span class="arithmatex">\(x = t^3\sqrt{t}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(x' = 3.5 t^{2.5}\)</span>$</p>
+<p><strong>14)</strong> <span class="arithmatex">\(y = \frac{2}{x^3\sqrt{x}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y = 2x^{-3.5} \implies y' = -7x^{-4.5}\)</span>$</p>
+<p><strong>15)</strong> <span class="arithmatex">\(y = (2\sqrt[3]{x^2}-x)(4\sqrt[3]{x^4}+2\sqrt[3]{x^5}+x^2)\)</span>
+<strong>Solution:</strong>
+Using <span class="arithmatex">\(a^3-b^3\)</span> formula structure (<span class="arithmatex">\(a=2x^{2/3}, b=x\)</span>):
+<span class="arithmatex">\(y = (2x^{2/3})^3 - x^3 = 8x^2 - x^3\)</span>.
+$<span class="arithmatex">\(y' = 16x - 3x^2\)</span>$</p>
+<p><strong>16)</strong> <span class="arithmatex">\(y = (4x^2-2x\sqrt{x}+x)(2x+\sqrt{x})\)</span>
+<strong>Solution:</strong>
+Sum of cubes structure (<span class="arithmatex">\(a=2x, b=\sqrt{x}\)</span>):
+<span class="arithmatex">\(y = (2x)^3 + (\sqrt{x})^3 = 8x^3 + x^{1.5}\)</span>.
+$<span class="arithmatex">\(y' = 24x^2 + 1.5\sqrt{x}\)</span>$</p>
+<p><strong>17)</strong> <span class="arithmatex">\(y = \frac{3}{3x-2}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{-9}{(3x-2)^2}\)</span>$</p>
+<p><strong>18)</strong> <span class="arithmatex">\(y = \frac{5}{2x^2-5x+1}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{-5(4x-5)}{(2x^2-5x+1)^2}\)</span>$</p>
+<p><strong>19)</strong> <span class="arithmatex">\(y = \frac{3x^2}{7x^5-x+2}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{6x(7x^5-x+2) - 3x^2(35x^4-1)}{(7x^5-x+2)^2}\)</span>$</p>
+<p><strong>20)</strong> <span class="arithmatex">\(y = \frac{8x^3}{x^3+x-1}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{24x^2(x^3+x-1) - 8x^3(3x^2+1)}{(x^3+x-1)^2}\)</span>$</p>
+<p><strong>21)</strong> <span class="arithmatex">\(y = \frac{x+1}{x-1}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{-2}{(x-1)^2}\)</span>$</p>
+<p><strong>22)</strong> <span class="arithmatex">\(y = \frac{5x^2+x-2}{x^2+7}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{-x^2+74x+7}{(x^2+7)^2}\)</span>$</p>
+<p><strong>23)</strong> <span class="arithmatex">\(y = \frac{x^2-2x+3}{x^2+2x-3}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{4x^2-12x}{(x^2+2x-3)^2}\)</span>$</p>
+<p><strong>24)</strong> <span class="arithmatex">\(y = \frac{3}{(1-x^2)(1-2x^3)}\)</span>
+<strong>Solution:</strong>
+Use quotient rule or partial expansion.</p>
+<p><strong>25)</strong> <span class="arithmatex">\(y = \frac{\sqrt[3]{x}}{1-\sqrt[3]{x}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{1}{3\sqrt[3]{x^2}(1-\sqrt[3]{x})^2}\)</span>$</p>
+<p><strong>26)</strong> <span class="arithmatex">\(z = \frac{1+\sqrt{t}}{1+\sqrt{2t}}\)</span>
+<strong>Solution:</strong>
+Quotient rule.</p>
+<p><strong>27)</strong> <span class="arithmatex">\(s = (3t+1)^7\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(s' = 21(3t+1)^6\)</span>$</p>
+<p><strong>28)</strong> <span class="arithmatex">\(v = (4z^2-5z+13)^5\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(v' = 5(4z^2-5z+13)^4(8z-5)\)</span>$</p>
+<p><strong>29)</strong> <span class="arithmatex">\(x = (\frac{1}{t}+4)^4\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(x' = 4(t^{-1}+4)^3(-t^{-2})\)</span>$</p>
+<p><strong>30)</strong> <span class="arithmatex">\(s = (\frac{7t^2-\frac{t}{2}+6}{t})^6\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(s' = 6(\dots)^5 \cdot (7 - \frac{6}{t^2})\)</span>$</p>
+<p><strong>31)</strong> <span class="arithmatex">\(y = \sqrt{x^2-4}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{x}{\sqrt{x^2-4}}\)</span>$</p>
+<p><strong>32)</strong> <span class="arithmatex">\(z = \sqrt{ax^2+bx+c}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(z' = \frac{2ax+b}{2\sqrt{ax^2+bx+c}}\)</span>$</p>
+<p><strong>33)</strong> <span class="arithmatex">\(y = \frac{1}{\sqrt{2-3t}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{3}{2(2-3t)^{3/2}}\)</span>$</p>
+<p><strong>34)</strong> <span class="arithmatex">\(s = \frac{1}{\sqrt{6t-t^2}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(s' = \frac{t-3}{(6t-t^2)^{3/2}}\)</span>$</p>
+<p><strong>35)</strong> <span class="arithmatex">\(y = \frac{1}{\sqrt[3]{(2-x^3)^4}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = 4x^2(2-x^3)^{-7/3}\)</span>$</p>
+<p><strong>36)</strong> <span class="arithmatex">\(y = \frac{a}{\sqrt[p]{(a+bx)^r}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = a \cdot (-\frac{r}{p})(a+bx)^{-r/p - 1} \cdot b\)</span>$</p>
+<p><strong>37)</strong> <span class="arithmatex">\(y = \frac{1}{(b-x^n)^m}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = -m(b-x^n)^{-m-1}(-nx^{n-1})\)</span>$</p>
+<p><strong>38)</strong> <span class="arithmatex">\(y = \sqrt[4]{(x-1)^3}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{3}{4}(x-1)^{-1/4}\)</span>$</p>
+<p><strong>39)</strong> <span class="arithmatex">\(u = \frac{1}{v-\sqrt{a^2+b^2}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(u' = -(v-\sqrt{\dots})^{-2}\)</span>$</p>
+<p><strong>40)</strong> <span class="arithmatex">\(y = \sqrt{\frac{a-x}{a^2-x^2}}\)</span>
+<strong>Solution:</strong>
+Simplify: <span class="arithmatex">\(y = \sqrt{\frac{1}{a+x}}\)</span> (<span class="arithmatex">\(x \ne a\)</span>).
+$<span class="arithmatex">\(y' = -0.5(a+x)^{-1.5}\)</span>$</p>
+<p><strong>41)</strong> <span class="arithmatex">\(v = \frac{z}{\sqrt{a^2-z^2}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(v' = a^2 (a^2-z^2)^{-3/2}\)</span>$</p>
+<p><strong>42)</strong> <span class="arithmatex">\(y = \frac{3\sqrt{x}}{x^2+1}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{3-9x^2}{2\sqrt{x}(x^2+1)^2}\)</span>$</p>
+<p><strong>43)</strong> <span class="arithmatex">\(y = \frac{x^2}{\sqrt[3]{x^3+1}}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{2x(x^3+1) - x^2 \cdot \frac{1}{3}(x^3+1)^{-2/3}3x^2}{(x^3+1)^{4/3}} = \frac{2x^4+2x - x^4}{(x^3+1)^{4/3}}\)</span>$</p>
+<p><strong>44)</strong> Chain rule on fraction.</p>
+<p><strong>45)</strong> Chain rule on fraction.</p>
+<p><strong>46)</strong> <span class="arithmatex">\(s = \sqrt{\frac{1-\sqrt{t}}{1+\sqrt{t}}}\)</span>
+<strong>Solution:</strong>
+Logarithmic differentiation implies <span class="arithmatex">\(s'/s = \frac{1}{2}(\frac{-1}{2\sqrt{t}(1-\sqrt{t})} - \frac{1}{2\sqrt{t}(1+\sqrt{t})})\)</span>.</p>
+<p><strong>49)</strong> <span class="arithmatex">\(v = \cos \frac{t}{a}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(v' = -\frac{1}{a} \sin \frac{t}{a}\)</span>$</p>
+<p><strong>50)</strong> <span class="arithmatex">\(x = a \sin bt\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(x' = ab \cos bt\)</span>$</p>
+<p><strong>51)</strong> <span class="arithmatex">\(y = a \sin \frac{a}{x}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = -\frac{a^2}{x^2} \cos \frac{a}{x}\)</span>$</p>
+<p><strong>52)</strong> <span class="arithmatex">\(z = 2x+\sin 2x\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(z' = 2 + 2\cos 2x = 4\cos^2 x\)</span>$</p>
+<p><strong>53)</strong> <span class="arithmatex">\(s = \sin^2 3t\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(s' = 3\sin 6t\)</span>$</p>
+<p><strong>54)</strong> <span class="arithmatex">\(v = 4\cos^5 \frac{t}{4}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(v' = -5\cos^4 \frac{t}{4} \sin \frac{t}{4}\)</span>$</p>
+<p><strong>55)</strong> <span class="arithmatex">\(s = \frac{1}{\cos^4 t}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(s' = \frac{4\sin t}{\cos^5 t}\)</span>$</p>
+<p><strong>56)</strong> <span class="arithmatex">\(v = \frac{5}{\sin^3 2t}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(v' = \frac{-30\cos 2t}{\sin^4 2t}\)</span>$</p>
+<p><strong>57)</strong> <span class="arithmatex">\(s = \frac{\sin t + \cos t}{2\sin 2t}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(s = \frac{\sin t + \cos t}{4\sin t \cos t} = \frac{1}{4\cos t} + \frac{1}{4\sin t}\)</span>$
+$<span class="arithmatex">\(s' = \frac{\sin t}{4\cos^2 t} - \frac{\cos t}{4\sin^2 t}\)</span>$</p>
+<p><strong>59)</strong> <span class="arithmatex">\(y = \frac{x \sin x}{1+\text{tg } x}\)</span>
+<strong>Solution:</strong>
+Quotient rule.</p>
+<p><strong>63)</strong> <span class="arithmatex">\(y = \text{tg}^4 \sqrt{x}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{2\text{tg}^3\sqrt{x}}{\sqrt{x}\cos^2\sqrt{x}}\)</span>$</p>
+<p><strong>65)</strong> <span class="arithmatex">\(y = e^{ax}(a\sin x - \cos x)\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = (a^2+1)e^{ax}\sin x\)</span>$</p>
+<p><strong>76)</strong> <span class="arithmatex">\(y = \text{arctg } 3x\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{3}{1+9x^2}\)</span>$</p>
+<p><strong>77)</strong> <span class="arithmatex">\(y = 7\text{arctg } \frac{x}{2}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{14}{4+x^2}\)</span>$</p>
+<p><strong>98)</strong> <span class="arithmatex">\(y = e^{3x}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = 3e^{3x}\)</span>$</p>
+<p><strong>100)</strong> <span class="arithmatex">\(y = e^{x^2}f(x)\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = e^{x^2}(2xf(x) + f'(x))\)</span>$</p>
+<p><strong>110)</strong> <span class="arithmatex">\(y = 5^x+2^x\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = 5^x \ln 5 + 2^x \ln 2\)</span>$</p>
+<p><strong>115)</strong> <span class="arithmatex">\(y = \ln 3x\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = \frac{1}{x}\)</span>$</p>
+<p><strong>133)</strong> <span class="arithmatex">\(y = \log_x \ln x\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y = \frac{\ln(\ln x)}{\ln x} \implies y' = \frac{1 - \ln(\ln x)}{x(\ln x)^2}\)</span>$</p>
+<p><strong>135)</strong> <span class="arithmatex">\(y = x^{5x}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = 5x^{5x}(\ln x + 1)\)</span>$</p>
+<p><strong>150)</strong> <span class="arithmatex">\(y = x^{e^x}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = x^{e^x} e^x (\ln x + 1/x)\)</span>$</p>
+<p><strong>151)</strong> <span class="arithmatex">\(y = x^{x^x}\)</span>
+<strong>Solution:</strong>
+$<span class="arithmatex">\(y' = x^{x^x} (x^x(\ln x+1)\ln x + x^{x-1})\)</span>$</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../02_function_limits_solution/" class="btn btn-neutral float-left" title="2. Function Limits"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../04_function_analysis_solution/" class="btn btn-neutral float-right" title="4. Function Analysis">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../02_function_limits_solution/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../04_function_analysis_solution/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/config.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

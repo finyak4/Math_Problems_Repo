@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/1_Algebra/03_matrix_inversion/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>03 matrix inversion - Math Problems</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "03 matrix inversion";
+        var mkdocs_page_input_path = "en\\1_Algebra\\03_matrix_inversion.md";
+        var mkdocs_page_url = "/Math_Problems_Repo/1_Algebra/03_matrix_inversion/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math Problems
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Algebra</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../01_matrices_and_operations_solution/">1. Matrices & Operations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02_determinants_solution/">2. Determinants</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03_matrix_inversion_solution/">3. Matrix Inversion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04_systems_of_equations_solution/">4. Systems of Equations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/01_vectors_solution/">1. Vectors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/02_lines_solution/">2. Lines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/03_planes_solution/">3. Planes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/04_line_and_plane_solution/">4. Line and Plane</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Analysis</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_Analiza/01_sequence_limits_solution/">1. Sequence Limits</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_Analiza/02_function_limits_solution/">2. Function Limits</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_Analiza/03_derivatives_solution/">3. Derivatives</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_Analiza/04_function_analysis_solution/">4. Function Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_Analiza/05_integrals_solution/">5. Integrals</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math Problems</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">03 matrix inversion</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="matrix-inversion">Matrix Inversion</h2>
+<h3 id="ex-1">Ex 1.</h3>
+<p>Find the inverse matrix using the formula for a <span class="arithmatex">\(2\times2\)</span> matrix</p>
+<div class="arithmatex">\[
+A=\begin{pmatrix}2 &amp; 1\\ 5 &amp; 3\end{pmatrix}
+\qquad
+B=\begin{pmatrix}0 &amp; 1\\ 1 &amp; 0\end{pmatrix}
+\qquad
+C=\begin{pmatrix}4 &amp; 7\\ 2 &amp; 6\end{pmatrix}
+\]</div>
+<h3 id="ex-2">Ex 2.</h3>
+<p>For the matrices</p>
+<div class="arithmatex">\[
+A=\begin{pmatrix}1 &amp; 2\\ 2 &amp; 5\end{pmatrix}
+\quad
+B=\begin{pmatrix}12&amp; 5\\ 7 &amp; 3\end{pmatrix}
+\quad
+C=\begin{pmatrix}1 &amp; 2 &amp; 3\\ 0 &amp; 1 &amp; 4\\ 5 &amp; 6 &amp; 0\end{pmatrix}
+\quad
+D=\begin{pmatrix}2 &amp; 0 &amp; 1\\ 1 &amp; 3 &amp; 0\\ 0 &amp; 4 &amp; 5\end{pmatrix}
+\]</div>
+<p>calculate the inverse matrices using the methods:</p>
+<ul>
+<li>augmenting with the identity matrix and performing Gauss-Jordan elimination,</li>
+<li>using the formula with cofactor matrices (adjugate matrix)</li>
+</ul>
+<p>So for each matrix provide two methods of calculating the inverse matrix (if it exists).</p>
+<h3 id="ex-3">Ex 3.</h3>
+<p>Check if the matrix</p>
+<div class="arithmatex">\[
+H=\begin{pmatrix}1 &amp; 2 &amp; 3\\ 2 &amp; 4 &amp; 6\\ 0 &amp; 1 &amp; 1\end{pmatrix}
+\]</div>
+<p>is invertible. Justify the answer (use the determinant). Could this have been noticed without calculating the determinant? What would have to happen for the matrix to be invertible?</p>
+<h3 id="ex-4">Ex 4.</h3>
+<p>For a matrix <span class="arithmatex">\(A\)</span> satisfying <span class="arithmatex">\(A^{2}=I\)</span> (so-called involution), show that <span class="arithmatex">\(A^{-1}=A\)</span>. Give an example of a non-trivial <span class="arithmatex">\(2\times2\)</span> matrix satisfying this condition (other than <span class="arithmatex">\(I\)</span> and <span class="arithmatex">\(-I\)</span>). How many such matrices are there?</p>
+<h3 id="ex-5">Ex 5.</h3>
+<p>Calculate the inverse of the diagonal matrix <span class="arithmatex">\(D=\operatorname{diag}(2,5,-3,1)\)</span>, if it exists. Discuss the condition for the existence of an inverse for a diagonal matrix.</p>
+<h3 id="ex-6">Ex 6.</h3>
+<p>Solve the matrix equations:</p>
+<p>a) </p>
+<div class="arithmatex">\[\begin{bmatrix} 2 &amp; 5 \\\ 1 &amp; 3 \end{bmatrix} \cdot X = \begin{bmatrix} 4 &amp; -6 \\\ 2 &amp; 1 \end{bmatrix}\]</div>
+<p>b) </p>
+<div class="arithmatex">\[\begin{bmatrix} 2 &amp; 1 \\\ 5 &amp; 3 \end{bmatrix} \cdot X = \begin{bmatrix} 1 &amp; 2 \\\ 3 &amp; 4 \end{bmatrix}\]</div>
+<p>c) </p>
+<div class="arithmatex">\[X \cdot \begin{bmatrix} 1 &amp; 1 &amp; -1 \\\ 2 &amp; 1 &amp; 0 \\\ 1 &amp; -1 &amp; 1 \end{bmatrix} = \begin{bmatrix} 1 &amp; -3 &amp; 3 \\\ 4 &amp; 3 &amp; 2 \\\ 1 &amp; -2 &amp; 5 \end{bmatrix}\]</div>
+<p>d) </p>
+<div class="arithmatex">\[\begin{bmatrix} 3 &amp; 2 &amp; 3 \\\ 1 &amp; 1 &amp; 2 \\\ 3 &amp; 2 &amp; 4 \end{bmatrix} \cdot X = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\\ 1 &amp; -1 &amp; 2 \\\ 2 &amp; 2 &amp; 4 \end{bmatrix}\]</div>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/config.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

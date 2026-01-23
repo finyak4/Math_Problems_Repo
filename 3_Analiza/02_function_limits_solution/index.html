@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/3_Analiza/02_function_limits_solution/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>2. Function Limits - Math Problems</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "2. Function Limits";
+        var mkdocs_page_input_path = "en\\3_Analiza\\02_function_limits_solution.md";
+        var mkdocs_page_url = "/Math_Problems_Repo/3_Analiza/02_function_limits_solution/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math Problems
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Algebra</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1_Algebra/01_matrices_and_operations_solution/">1. Matrices & Operations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1_Algebra/02_determinants_solution/">2. Determinants</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1_Algebra/03_matrix_inversion_solution/">3. Matrix Inversion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../1_Algebra/04_systems_of_equations_solution/">4. Systems of Equations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/01_vectors_solution/">1. Vectors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/02_lines_solution/">2. Lines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/03_planes_solution/">3. Planes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/04_line_and_plane_solution/">4. Line and Plane</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Analysis</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../01_sequence_limits_solution/">1. Sequence Limits</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2. Function Limits</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ex-1">Ex 1.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ex-2">Ex 2.</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03_derivatives_solution/">3. Derivatives</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04_function_analysis_solution/">4. Function Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05_integrals_solution/">5. Integrals</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math Problems</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Analysis</li>
+      <li class="breadcrumb-item active">2. Function Limits</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="function-limits-solutions">Function Limits - Solutions</h2>
+<h3 id="ex-1">Ex 1.</h3>
+<p><strong>Problem 1)</strong>
+$$
+\lim\limits_{x \to 3} \frac{27-x^3}{x-3}
+$$
+<strong>Solution:</strong>
+$$
+\lim_{x \to 3} \frac{-(x-3)(x^2+3x+9)}{x-3} = -(9+9+9) = -27
+$$</p>
+<p><strong>Problem 2)</strong>
+$$
+\lim\limits_{x \to 3} \frac{x^2-4x+3}{2x-6}
+$$
+<strong>Solution:</strong>
+$$
+\lim_{x \to 3} \frac{(x-3)(x-1)}{2(x-3)} = \frac{3-1}{2} = 1
+$$</p>
+<p><strong>Problem 3)</strong>
+$$
+\lim\limits_{x \to -1} \frac{x^3-1}{x+1}
+$$
+<strong>Solution:</strong>
+Direct substitution: <span class="arithmatex">\(\frac{-2}{0}\)</span>.
+LHL: <span class="arithmatex">\(\frac{-2}{0^-} = +\infty\)</span>. RHL: <span class="arithmatex">\(\frac{-2}{0^+} = -\infty\)</span>.
+Limit does not exist (infinity with different signs).
+Note: If problem was <span class="arithmatex">\(x^3+1\)</span>, it would be cancellable. As written (<span class="arithmatex">\(x^3-1\)</span>), no cancellation.</p>
+<p><strong>Problem 4)</strong>
+$$
+\lim\limits_{x \to -2} \frac{x+2}{x^5+32}
+$$
+<strong>Solution:</strong>
+Using derivative or factorization (<span class="arithmatex">\(a^5+b^5 = (a+b)(a^4-a^3b...)\)</span>).
+L'Hopital: <span class="arithmatex">\(\frac{1}{5x^4} = \frac{1}{5(16)} = \frac{1}{80}\)</span>.</p>
+<p><strong>Problem 5)</strong>
+$$
+\lim\limits_{x \to 4} \frac{x^2-2x-8}{x^2-9x+20}
+$$
+<strong>Solution:</strong>
+$$
+\lim_{x \to 4} \frac{(x-4)(x+2)}{(x-4)(x-5)} = \frac{4+2}{4-5} = -6
+$$</p>
+<p><strong>Problem 6)</strong>
+$$
+\lim\limits_{x \to -5} \frac{x^3+125}{2x^2-50}
+$$
+<strong>Solution:</strong>
+$$
+\lim_{x \to -5} \frac{(x+5)(x^2-5x+25)}{2(x-5)(x+5)} = \frac{25+25+25}{2(-10)} = \frac{75}{-20} = -3.75
+$$</p>
+<p><strong>Problem 7)</strong>
+$$
+\lim\limits_{x \to -2} \frac{3x^2+5x-2}{4x^2+9x+2}
+$$
+<strong>Solution:</strong>
+$$
+\lim_{x \to -2} \frac{(x+2)(3x-1)}{(x+2)(4x+1)} = \frac{-6-1}{-8+1} = \frac{-7}{-7} = 1
+$$</p>
+<p><strong>Problem 8)</strong>
+$$
+\lim\limits_{x \to 1} \frac{x^n-1}{x-1}
+$$
+<strong>Solution:</strong>
+Derivative of <span class="arithmatex">\(x^n\)</span> at <span class="arithmatex">\(x=1\)</span> is <span class="arithmatex">\(n\)</span>.</p>
+<p><strong>Problem 9)</strong>
+$$
+\lim\limits_{x \to 3} \frac{(x-3)(-1)^{[x]}}{x^2-9}
+$$
+<strong>Solution:</strong>
+$$
+\lim \frac{(-1)^{[x]}}{x+3}
+$$
+RHL (<span class="arithmatex">\(x \to 3^+\)</span>): <span class="arithmatex">\(\frac{-1}{6}\)</span>.
+LHL (<span class="arithmatex">\(x \to 3^-\)</span>): <span class="arithmatex">\(\frac{1}{6}\)</span>.
+Limit does not exist.</p>
+<p><strong>Problem 10)</strong>
+$$
+\lim\limits_{x \to 0} \frac{\sqrt[3]{1+mx}-1}{x}
+$$
+<strong>Solution:</strong>
+Using approximation <span class="arithmatex">\((1+mx)^{1/3} \approx 1 + \frac{1}{3}mx\)</span>.
+Limit is <span class="arithmatex">\(m/3\)</span>.</p>
+<p><strong>Problem 11)</strong> Same as 8.</p>
+<p><strong>Problem 12)</strong>
+$$
+\lim\limits_{x \to 25} \frac{\sqrt{x}-5}{x-25}
+$$
+<strong>Solution:</strong>
+$$
+\lim \frac{1}{\sqrt{x}+5} = \frac{1}{10}
+$$</p>
+<p><strong>Problem 13)</strong>
+$$
+\lim\limits_{x \to 0} \frac{\sqrt{x^2+1}-\sqrt{x+1}}{1-\sqrt{x+1}}
+$$
+<strong>Solution:</strong>
+Use L'Hopital or conjugates.
+L'H: <span class="arithmatex">\(\frac{\frac{2x}{2\sqrt{x^2+1}} - \frac{1}{2\sqrt{x+1}}}{-\frac{1}{2\sqrt{x+1}}} = \frac{0 - 1/2}{-1/2} = 1\)</span>.</p>
+<p><strong>Problem 14)</strong>
+$$
+\lim\limits_{x \to 0} \frac{\sqrt{x^2+1}-1}{\sqrt{x^2+25}-5}
+$$
+<strong>Solution:</strong>
+<span class="arithmatex">\(\approx \frac{x^2/2}{x^2/10} = \frac{10}{2} = 5\)</span>.</p>
+<p><strong>Problem 15)</strong>
+$$
+\lim\limits_{x \to 0} \frac{\sin 3x}{4x}
+$$
+<strong>Solution:</strong>
+$$
+\frac{3}{4} \lim \frac{\sin 3x}{3x} = \frac{3}{4}
+$$</p>
+<p><strong>Problem 16)</strong>
+$$
+\lim\limits_{x \to 0} \frac{4x}{3 \sin 2x}
+$$
+<strong>Solution:</strong>
+$$
+\frac{4}{3} \cdot \frac{1}{2} = \frac{2}{3}
+$$</p>
+<p><strong>Problem 17)</strong>
+$$
+\lim\limits_{x \to +\infty} \frac{\sin x}{x}
+$$
+<strong>Solution:</strong>
+Bounded function / Infinity = 0.</p>
+<p><strong>Problem 18)</strong>
+$$
+\lim\limits_{x \to \pi} \frac{\sin x}{x}
+$$
+<strong>Solution:</strong>
+$$
+\frac{0}{\pi} = 0
+$$</p>
+<p><strong>Problem 19)</strong>
+$$
+\lim\limits_{x \to \frac{\pi}{2}} \frac{\cos x}{x-\frac{\pi}{2}}
+$$
+<strong>Solution:</strong>
+L'Hopital: <span class="arithmatex">\(\frac{-\sin x}{1} \to -1\)</span>.</p>
+<p><strong>Problem 20)</strong>
+$$
+\lim\limits_{x \to 0} \frac{\text{tg } x}{4x}
+$$
+<strong>Solution:</strong>
+$$
+\frac{1}{4}
+$$</p>
+<p><strong>Problem 21)</strong>
+$$
+\lim\limits_{x \to \pi} \frac{8-x}{\sin x}
+$$
+<strong>Solution:</strong>
+Numer <span class="arithmatex">\(\to 8-\pi \neq 0\)</span>. Denom <span class="arithmatex">\(\to 0\)</span>. Limit is <span class="arithmatex">\(\infty\)</span>.</p>
+<p><strong>Problem 22)</strong>
+$$
+\lim\limits_{x \to 0} \frac{\sin 2x}{\sin 3x}
+$$
+<strong>Solution:</strong>
+$$
+\frac{2}{3}
+$$</p>
+<p><strong>Problem 23)</strong>
+$$
+\lim\limits_{x \to 0} \frac{\text{tg } 2x}{\text{tg } x}
+$$
+<strong>Solution:</strong>
+<span class="arithmatex">\(2\)</span>.</p>
+<p><strong>Problem 24)</strong>
+$$
+\lim\limits_{x \to \frac{\pi}{2}} \frac{1+\cos x}{\sin^2 x}
+$$
+<strong>Solution:</strong>
+$$
+\frac{1+0}{1} = 1
+$$</p>
+<p><strong>Problem 25)</strong>
+$$
+\lim\limits_{x \to \frac{\pi}{4}} \frac{\cos x - \cos \frac{\pi}{4}}{\sin x - \sin \frac{\pi}{4}}
+$$
+<strong>Solution:</strong>
+L'Hopital: <span class="arithmatex">\(\frac{-\sin x}{\cos x} = -\operatorname{tg} x \to -1\)</span>.</p>
+<p><strong>Problem 26)</strong>
+$$
+\lim\limits_{x \to 1} \frac{|\text{tg}(x-1)|}{(x-1)^2}
+$$
+<strong>Solution:</strong>
+Let <span class="arithmatex">\(t=x-1\)</span>. <span class="arithmatex">\(\frac{|\operatorname{tg} t|}{t^2} \approx \frac{|t|}{t^2} = \frac{1}{|t|} \to \infty\)</span>.</p>
+<p><strong>Problem 27)</strong>
+$$
+\lim\limits_{x \to 0} \frac{\text{arctg } x}{x}
+$$
+<strong>Solution:</strong>
+<span class="arithmatex">\(1\)</span>.</p>
+<p><strong>Problem 28)</strong>
+$$
+\lim\limits_{x \to \frac{1}{2}} \frac{\arcsin(1-2x)}{4x^2-1}
+$$
+<strong>Solution:</strong>
+Let <span class="arithmatex">\(t=1-2x\)</span>. <span class="arithmatex">\(4x^2-1 = (2x-1)(2x+1) = -t(2-t) \approx -2t\)</span>.
+<span class="arithmatex">\(\lim \frac{\arcsin t}{-2t} = -0.5\)</span>.</p>
+<p><strong>Problem 29)</strong>
+$$
+\lim\limits_{x \to 0} \frac{\sqrt{1+\sin x}}{x}
+$$
+<strong>Solution:</strong>
+<span class="arithmatex">\(\frac{1}{0} \to \infty\)</span>. (If problem was <span class="arithmatex">\(\sqrt{1+\sin x}-1\)</span>, limit would be <span class="arithmatex">\(1/2\)</span>).</p>
+<p><strong>Problem 30)</strong>
+$$
+\lim\limits_{x \to 0} (1-3x)^{\frac{1}{x}}
+$$
+<strong>Solution:</strong>
+<span class="arithmatex">\(e^{-3}\)</span>.</p>
+<p><strong>Problem 31)</strong>
+$$
+\lim\limits_{x \to 0} (1+kx)^{\frac{n}{x}}
+$$
+<strong>Solution:</strong>
+<span class="arithmatex">\(e^{kn}\)</span>.</p>
+<h3 id="ex-2">Ex 2.</h3>
+<p><strong>Problem:</strong> Determine continuity.</p>
+<p>1) <span class="arithmatex">\(f(x) = \frac{x^2-25}{x+5}\)</span> for <span class="arithmatex">\(x \neq -5\)</span> and <span class="arithmatex">\(f(-5)=-10\)</span>.
+<strong>Solution:</strong>
+<span class="arithmatex">\(\lim_{x \to -5} (x-5) = -10\)</span>. <span class="arithmatex">\(f(-5)=-10\)</span>. <strong>Continuous.</strong></p>
+<p>2) <span class="arithmatex">\(f(x) = \frac{\sin x}{x}\)</span> for <span class="arithmatex">\(x \neq 0\)</span> and <span class="arithmatex">\(f(0)=1\)</span>.
+<strong>Solution:</strong>
+Limit is <span class="arithmatex">\(1\)</span>. <strong>Continuous.</strong></p>
+<p>3) <span class="arithmatex">\(f(x) = \frac{\sin x}{|x|}\)</span> for <span class="arithmatex">\(x \neq 0\)</span> and <span class="arithmatex">\(f(0)=1\)</span>.
+<strong>Solution:</strong>
+RHL <span class="arithmatex">\(1\)</span>, LHL <span class="arithmatex">\(-1\)</span>. <strong>Discontinuous</strong> (Jump).</p>
+<p>4) <span class="arithmatex">\(f(x) = x + \frac{1}{x}\)</span>
+<strong>Solution:</strong>
+Infinite at <span class="arithmatex">\(0\)</span>. <strong>Discontinuous</strong> (Infinite).</p>
+<p>5) <span class="arithmatex">\(f(x) = \frac{x^2-x^3}{|x-1|} = \frac{x^2(1-x)}{|x-1|}\)</span>
+<strong>Solution:</strong>
+Limit is <span class="arithmatex">\(\pm 1\)</span> (<span class="arithmatex">\(x \to 1^- \implies 1\)</span>, <span class="arithmatex">\(x \to 1^+ \implies -1\)</span>). <strong>Discontinuous.</strong></p>
+<p>6) <span class="arithmatex">\(f(x) = x - [x]\)</span>
+<strong>Solution:</strong>
+Jumps at integers. <strong>Discontinuous.</strong></p>
+<p>7) <span class="arithmatex">\(f(x) = [x] + [-x]\)</span>
+<strong>Solution:</strong>
+For integer <span class="arithmatex">\(x\)</span>, value <span class="arithmatex">\(0\)</span>. For non-integer, <span class="arithmatex">\(-1\)</span>.
+Discontinuous at integers.</p>
+<p>8) <span class="arithmatex">\(f(x) = \frac{\sqrt{1+x}-1}{x}\)</span>
+<strong>Solution:</strong>
+Limit is <span class="arithmatex">\(1/2\)</span>. If <span class="arithmatex">\(f(0)\)</span> is not defined, it is a removable discontinuity. Can be defined as <span class="arithmatex">\(1/2\)</span>.</p>
+<p>9) <span class="arithmatex">\(f(x) = x \sin \frac{\pi}{x}\)</span>
+<strong>Solution:</strong>
+Limit at <span class="arithmatex">\(0\)</span> is <span class="arithmatex">\(0\)</span>. Define <span class="arithmatex">\(f(0)=0\)</span>.</p>
+<p>10) <span class="arithmatex">\(f(x) = \frac{\sin^2 x}{1-\cos x}\)</span>
+<strong>Solution:</strong>
+Limit <span class="arithmatex">\(1+\cos x \to 2\)</span>. Define <span class="arithmatex">\(f(0)=2\)</span>.</p>
+<p>11) <span class="arithmatex">\(x \left[ \frac{1}{x} \right]\)</span> at <span class="arithmatex">\(x=0\)</span>.
+<strong>Solution:</strong>
+<span class="arithmatex">\(\lim_{x \to 0} x(1/x - \{1/x\}) = 1 - 0 = 1\)</span>. Continuous if <span class="arithmatex">\(f(0)=1\)</span>.</p>
+<p>12) <span class="arithmatex">\(x \frac{b}{x} \left[ \frac{x}{a} \right]\)</span>
+<strong>Solution:</strong>
+<span class="arithmatex">\(\to b \cdot 0 = 0\)</span>.</p>
+<p>13) <span class="arithmatex">\(\frac{e^{\frac{1}{x}}-1}{e^{\frac{1}{x}}+1}\)</span> at <span class="arithmatex">\(x=0\)</span>.
+<strong>Solution:</strong>
+Jump (-1 to 1). Discontinuous.</p>
+<p>14) <span class="arithmatex">\(e^{\frac{1}{1-x^2}}\)</span> at <span class="arithmatex">\(x=1\)</span>.
+<strong>Solution:</strong>
+<span class="arithmatex">\(e^{\infty}\)</span> vs <span class="arithmatex">\(e^{-\infty}\)</span>. Infinite/Zero. Discontinuous.</p>
+<p>15) <span class="arithmatex">\(x e^{\frac{1}{x}}\)</span> at <span class="arithmatex">\(x=0\)</span>.
+<strong>Solution:</strong>
+One side infinite. Discontinuous.</p>
+<p>16) <span class="arithmatex">\(\frac{x}{2x+e^{\frac{1}{x-1}}}\)</span> at <span class="arithmatex">\(x=1\)</span>.
+<strong>Solution:</strong>
+Discontinuous.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../01_sequence_limits_solution/" class="btn btn-neutral float-left" title="1. Sequence Limits"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../03_derivatives_solution/" class="btn btn-neutral float-right" title="3. Derivatives">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../01_sequence_limits_solution/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../03_derivatives_solution/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/config.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

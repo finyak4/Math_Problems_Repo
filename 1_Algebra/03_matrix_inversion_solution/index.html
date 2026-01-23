@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/1_Algebra/03_matrix_inversion_solution/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>3. Matrix Inversion - Math Problems</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "3. Matrix Inversion";
+        var mkdocs_page_input_path = "en\\1_Algebra\\03_matrix_inversion_solution.md";
+        var mkdocs_page_url = "/Math_Problems_Repo/1_Algebra/03_matrix_inversion_solution/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Math Problems
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Algebra</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../01_matrices_and_operations_solution/">1. Matrices & Operations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02_determinants_solution/">2. Determinants</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">3. Matrix Inversion</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ex-1">Ex 1.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ex-2">Ex 2.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ex-3">Ex 3.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ex-4">Ex 4.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ex-5">Ex 5.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ex-6">Ex 6.</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04_systems_of_equations_solution/">4. Systems of Equations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Geometry</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/01_vectors_solution/">1. Vectors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/02_lines_solution/">2. Lines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/03_planes_solution/">3. Planes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_Geometria/04_line_and_plane_solution/">4. Line and Plane</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Analysis</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_Analiza/01_sequence_limits_solution/">1. Sequence Limits</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_Analiza/02_function_limits_solution/">2. Function Limits</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_Analiza/03_derivatives_solution/">3. Derivatives</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_Analiza/04_function_analysis_solution/">4. Function Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_Analiza/05_integrals_solution/">5. Integrals</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Math Problems</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Algebra</li>
+      <li class="breadcrumb-item active">3. Matrix Inversion</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="matrix-inversion-solutions">Matrix Inversion - Solutions</h2>
+<h3 id="ex-1">Ex 1.</h3>
+<p><strong>Problem:</strong></p>
+<p>Find the inverse matrix using the formula for a <span class="arithmatex">\(2\times2\)</span> matrix</p>
+<div class="arithmatex">\[
+A=\begin{pmatrix}2 &amp; 1\\ 5 &amp; 3\end{pmatrix}
+\qquad
+B=\begin{pmatrix}0 &amp; 1\\ 1 &amp; 0\end{pmatrix}
+\qquad
+C=\begin{pmatrix}4 &amp; 7\\ 2 &amp; 6\end{pmatrix}
+\]</div>
+<p><strong>Solution:</strong></p>
+<p>Formula for inverse of <span class="arithmatex">\(2\times2\)</span> matrix <span class="arithmatex">\(A = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}\)</span>:
+$$
+A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d &amp; -b \ -c &amp; a \end{pmatrix}
+$$</p>
+<p><strong>A:</strong>
+$$
+A=\begin{pmatrix}2 &amp; 1\ 5 &amp; 3\end{pmatrix}, \quad \det(A) = 6 - 5 = 1
+$$
+$$
+A^{-1} = \frac{1}{1} \begin{pmatrix} 3 &amp; -1 \ -5 &amp; 2 \end{pmatrix} = \begin{pmatrix} 3 &amp; -1 \ -5 &amp; 2 \end{pmatrix}
+$$</p>
+<p><strong>B:</strong>
+$$
+B=\begin{pmatrix}0 &amp; 1\ 1 &amp; 0\end{pmatrix}, \quad \det(B) = 0 - 1 = -1
+$$
+$$
+B^{-1} = \frac{1}{-1} \begin{pmatrix} 0 &amp; -1 \ -1 &amp; 0 \end{pmatrix} = \begin{pmatrix} 0 &amp; 1 \ 1 &amp; 0 \end{pmatrix} = B
+$$</p>
+<p><strong>C:</strong>
+$$
+C=\begin{pmatrix}4 &amp; 7\ 2 &amp; 6\end{pmatrix}, \quad \det(C) = 24 - 14 = 10
+$$
+$$
+C^{-1} = \frac{1}{10} \begin{pmatrix} 6 &amp; -7 \ -2 &amp; 4 \end{pmatrix} = \begin{pmatrix} 0.6 &amp; -0.7 \ -0.2 &amp; 0.4 \end{pmatrix}
+$$</p>
+<h3 id="ex-2">Ex 2.</h3>
+<p><strong>Problem:</strong></p>
+<p>For the matrices</p>
+<div class="arithmatex">\[
+A=\begin{pmatrix}1 &amp; 2\\ 2 &amp; 5\end{pmatrix}
+\quad
+B=\begin{pmatrix}12&amp; 5\\ 7 &amp; 3\end{pmatrix}
+\quad
+C=\begin{pmatrix}1 &amp; 2 &amp; 3\\ 0 &amp; 1 &amp; 4\\ 5 &amp; 6 &amp; 0\end{pmatrix}
+\quad
+D=\begin{pmatrix}2 &amp; 0 &amp; 1\\ 1 &amp; 3 &amp; 0\\ 0 &amp; 4 &amp; 5\end{pmatrix}
+\]</div>
+<p>calculate the inverse matrices using the methods:</p>
+<ul>
+<li>augmenting with the identity matrix and performing Gauss-Jordan elimination,</li>
+<li>using the formula with cofactor matrices (adjugate matrix)</li>
+</ul>
+<p>So for each matrix provide two methods of calculating the inverse matrix (if it exists).</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Matrix A and B</strong> solved similarly to Ex 1.</p>
+<p><span class="arithmatex">\(A^{-1} = \begin{pmatrix} 5 &amp; -2 \\ -2 &amp; 1 \end{pmatrix}\)</span></p>
+<p><span class="arithmatex">\(B^{-1} = \frac{1}{36-35} \begin{pmatrix} 3 &amp; -5 \\ -7 &amp; 12 \end{pmatrix} = \begin{pmatrix} 3 &amp; -5 \\ -7 &amp; 12 \end{pmatrix}\)</span></p>
+<p><strong>Matrix C:</strong>
+$$
+C=\begin{pmatrix}1 &amp; 2 &amp; 3\ 0 &amp; 1 &amp; 4\ 5 &amp; 6 &amp; 0\end{pmatrix}
+$$
+<span class="arithmatex">\(\det(C) = 1(0-24) - 2(0-20) + 3(0-5) = -24 + 40 - 15 = 1\)</span>.</p>
+<p>Cofactor matrix:
+$$
+\begin{pmatrix}
+-24 &amp; 20 &amp; -5 \
+18 &amp; -15 &amp; 4 \
+5 &amp; -4 &amp; 1
+\end{pmatrix}
+$$
+Inverse (transpose of cofactors / det):
+$$
+C^{-1} = \begin{pmatrix} -24 &amp; 18 &amp; 5 \ 20 &amp; -15 &amp; -4 \ -5 &amp; 4 &amp; 1 \end{pmatrix}
+$$</p>
+<p><strong>Matrix D:</strong>
+$$
+D=\begin{pmatrix}2 &amp; 0 &amp; 1\ 1 &amp; 3 &amp; 0\ 0 &amp; 4 &amp; 5\end{pmatrix}
+$$
+<span class="arithmatex">\(\det(D) = 2(15-0) + 1(4-0) = 30+4=34\)</span>.
+Inverse:
+$$
+D^{-1} = \frac{1}{34} \begin{pmatrix} 15 &amp; 4 &amp; -3 \ -5 &amp; 10 &amp; 1 \ 4 &amp; -8 &amp; 6 \end{pmatrix}
+$$</p>
+<h3 id="ex-3">Ex 3.</h3>
+<p><strong>Problem:</strong></p>
+<p>Check if the matrix</p>
+<div class="arithmatex">\[
+H=\begin{pmatrix}1 &amp; 2 &amp; 3\\ 2 &amp; 4 &amp; 6\\ 0 &amp; 1 &amp; 1\end{pmatrix}
+\]</div>
+<p>is invertible. Justify the answer (use the determinant). Could this have been noticed without calculating the determinant? What would have to happen for the matrix to be invertible?</p>
+<p><strong>Solution:</strong></p>
+<p>$$
+H=\begin{pmatrix}1 &amp; 2 &amp; 3\ 2 &amp; 4 &amp; 6\ 0 &amp; 1 &amp; 1\end{pmatrix}
+$$
+Observe row 2 is <span class="arithmatex">\(2 \times\)</span> row 1 (<span class="arithmatex">\(R_2 = 2R_1\)</span>).
+Therefore, the rows are linearly dependent, so <span class="arithmatex">\(\det(H) = 0\)</span>.
+The matrix is <strong>not invertble</strong> (singular).
+This could be noticed without calculating the determinant. For a matrix to be invertible, its rows (and columns) must be linearly independent.</p>
+<h3 id="ex-4">Ex 4.</h3>
+<p><strong>Problem:</strong></p>
+<p>For a matrix <span class="arithmatex">\(A\)</span> satisfying <span class="arithmatex">\(A^{2}=I\)</span> (so-called involution), show that <span class="arithmatex">\(A^{-1}=A\)</span>. Give an example of a non-trivial <span class="arithmatex">\(2\times2\)</span> matrix satisfying this condition (other than <span class="arithmatex">\(I\)</span> and <span class="arithmatex">\(-I\)</span>). How many such matrices are there?</p>
+<p><strong>Solution:</strong></p>
+<p>If <span class="arithmatex">\(A^2 = I\)</span>, then multiplying by <span class="arithmatex">\(A^{-1}\)</span> gives <span class="arithmatex">\(A = A^{-1}\)</span>.
+Example: <span class="arithmatex">\(A = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}\)</span>. Check <span class="arithmatex">\(A^2 = I\)</span>.
+Other examples: reflection matrices. Infinitely many.</p>
+<h3 id="ex-5">Ex 5.</h3>
+<p><strong>Problem:</strong></p>
+<p>Calculate the inverse of the diagonal matrix <span class="arithmatex">\(D=\operatorname{diag}(2,5,-3,1)\)</span>, if it exists. Discuss the condition for the existence of an inverse for a diagonal matrix.</p>
+<p><strong>Solution:</strong></p>
+<p>$$
+D=\operatorname{diag}(2,5,-3,1)
+$$
+$$
+D^{-1} = \operatorname{diag}(\frac{1}{2}, \frac{1}{5}, -\frac{1}{3}, 1)
+$$
+Condition: All diagonal elements must be non-zero.</p>
+<h3 id="ex-6">Ex 6.</h3>
+<p><strong>Problem:</strong></p>
+<p>Solve the matrix equations:</p>
+<p>a) </p>
+<div class="arithmatex">\[
+\begin{bmatrix} 2 &amp; 5 \\\ 1 &amp; 3 \end{bmatrix} \cdot X = \begin{bmatrix} 4 &amp; -6 \\\ 2 &amp; 1 \end{bmatrix}
+\]</div>
+<p>b) </p>
+<div class="arithmatex">\[
+\begin{bmatrix} 2 &amp; 1 \\\ 5 &amp; 3 \end{bmatrix} \cdot X = \begin{bmatrix} 1 &amp; 2 \\\ 3 &amp; 4 \end{bmatrix}
+\]</div>
+<p>c) </p>
+<div class="arithmatex">\[
+X \cdot \begin{bmatrix} 1 &amp; 1 &amp; -1 \\\ 2 &amp; 1 &amp; 0 \\\ 1 &amp; -1 &amp; 1 \end{bmatrix} = \begin{bmatrix} 1 &amp; -3 &amp; 3 \\\ 4 &amp; 3 &amp; 2 \\\ 1 &amp; -2 &amp; 5 \end{bmatrix}
+\]</div>
+<p>d) </p>
+<div class="arithmatex">\[
+\begin{bmatrix} 3 &amp; 2 &amp; 3 \\\ 1 &amp; 1 &amp; 2 \\\ 3 &amp; 2 &amp; 4 \end{bmatrix} \cdot X = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\\ 1 &amp; -1 &amp; 2 \\\ 2 &amp; 2 &amp; 4 \end{bmatrix}
+\]</div>
+<p><strong>Solution:</strong></p>
+<p><strong>a)</strong>
+$$
+\begin{bmatrix} 2 &amp; 5 \\ 1 &amp; 3 \end{bmatrix} X = \begin{bmatrix} 4 &amp; -6 \\ 2 &amp; 1 \end{bmatrix}
+$$
+<span class="arithmatex">\(X = A^{-1}B\)</span>. <span class="arithmatex">\(A^{-1} = \begin{bmatrix} 3 &amp; -5 \\\ -1 &amp; 2 \end{bmatrix}\)</span>.
+$$
+X = \begin{bmatrix} 3 &amp; -5 \\ -1 &amp; 2 \end{bmatrix} \begin{bmatrix} 4 &amp; -6 \\ 2 &amp; 1 \end{bmatrix} = \begin{bmatrix} 12-10 &amp; -18-5 \\ -4+4 &amp; 6+2 \end{bmatrix} = \begin{bmatrix} 2 &amp; -23 \\ 0 &amp; 8 \end{bmatrix}
+$$</p>
+<p><strong>b)</strong>
+$$
+\begin{bmatrix} 2 &amp; 1 \\ 5 &amp; 3 \end{bmatrix} X = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}
+$$
+<span class="arithmatex">\(A^{-1} = \begin{bmatrix} 3 &amp; -1 \\\ -5 &amp; 2 \end{bmatrix}\)</span>.
+$$
+X = \begin{bmatrix} 3 &amp; -1 \\ -5 &amp; 2 \end{bmatrix} \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} = \begin{bmatrix} 0 &amp; 2 \\ 1 &amp; -2 \end{bmatrix}
+$$</p>
+<p><strong>c)</strong>
+$$
+X A = B \implies X = B A^{-1}
+$$
+<span class="arithmatex">\(A = \begin{bmatrix} 1 &amp; 1 &amp; -1 \\\ 2 &amp; 1 &amp; 0 \\\ 1 &amp; -1 &amp; 1 \end{bmatrix}\)</span>. Determine <span class="arithmatex">\(A^{-1}\)</span> (Ex 2 style). <span class="arithmatex">\(\det(A)=2\)</span>.
+<span class="arithmatex">\(A^{-1} = \frac{1}{2} \begin{bmatrix} 1 &amp; 0 &amp; 1 \\\ -2 &amp; 2 &amp; -2 \\\ -3 &amp; 2 &amp; -1 \end{bmatrix}\)</span>.
+$$
+X = \begin{bmatrix} 1 &amp; -3 &amp; 3 \\ 4 &amp; 3 &amp; 2 \\ 1 &amp; -2 &amp; 5 \end{bmatrix} \cdot \frac{1}{2} \begin{bmatrix} 1 &amp; 0 &amp; 1 \\ -2 &amp; 2 &amp; -2 \\ -3 &amp; 2 &amp; -1 \end{bmatrix} = \frac{1}{2} \begin{bmatrix} -2 &amp; 0 &amp; 4 \\ -8 &amp; 10 &amp; -4 \\ -10 &amp; 6 &amp; 0 \end{bmatrix} = \begin{bmatrix} -1 &amp; 0 &amp; 2 \\ -4 &amp; 5 &amp; -2 \\ -5 &amp; 3 &amp; 0 \end{bmatrix}
+$$</p>
+<p><strong>d)</strong>
+$$
+A X = B \implies X = A^{-1} B
+$$
+<span class="arithmatex">\(A = \begin{bmatrix} 3 &amp; 2 &amp; 3 \\\ 1 &amp; 1 &amp; 2 \\\ 3 &amp; 2 &amp; 4 \end{bmatrix}\)</span>. <span class="arithmatex">\(\det(A)=1\)</span>.
+<span class="arithmatex">\(A^{-1} = \begin{bmatrix} 0 &amp; -2 &amp; 1 \\\ 2 &amp; 3 &amp; -3 \\\ -1 &amp; 0 &amp; 1 \end{bmatrix}\)</span>.
+$$
+X = \begin{bmatrix} 0 &amp; -2 &amp; 1 \\ 2 &amp; 3 &amp; -3 \\ -1 &amp; 0 &amp; 1 \end{bmatrix} \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 1 &amp; -1 &amp; 2 \\ 2 &amp; 2 &amp; 4 \end{bmatrix} = \begin{bmatrix} 0 &amp; 4 &amp; 0 \\ -1 &amp; -5 &amp; 0 \\ 1 &amp; 0 &amp; 1 \end{bmatrix}
+$$</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../02_determinants_solution/" class="btn btn-neutral float-left" title="2. Determinants"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../04_systems_of_equations_solution/" class="btn btn-neutral float-right" title="4. Systems of Equations">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../02_determinants_solution/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../04_systems_of_equations_solution/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/config.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
