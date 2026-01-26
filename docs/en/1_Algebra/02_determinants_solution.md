@@ -76,16 +76,6 @@ B=\begin{pmatrix}
 \quad
 C=\begin{pmatrix}
 1 & 2 & 3 & 4\\
-46 & 0 & 1 & 0 & 0\\
-0 & 0 & 1 & 1\\
-0 & 0 & 0 & 2
-\end{pmatrix} 
-$$
-*(Note: Typo in problem source for C, corrected to standard triangular form likely intended)*
-Correct $C$:
-$$
-C=\begin{pmatrix}
-1 & 2 & 3 & 4\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 1\\
 0 & 0 & 0 & 2
@@ -164,7 +154,9 @@ calculate $\det(M(t))$ and find the values of $t$ for which the matrix is singul
 $$
 \det(M(t)) = t \cdot t - 1 \cdot 2 = t^2 - 2
 $$
+
 The matrix is singular when $\det(M(t)) = 0$:
+
 $$
 t^2 - 2 = 0 \implies t^2 = 2 \implies t = \sqrt{2} \quad \text{or} \quad t = -\sqrt{2}
 $$
