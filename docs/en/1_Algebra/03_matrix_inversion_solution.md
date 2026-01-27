@@ -7,42 +7,42 @@
 Find the inverse matrix using the formula for a $2\times2$ matrix
 
 $$
-A=\begin{pmatrix}2 & 1\\ 5 & 3\end{pmatrix}
+A=\begin{pmatrix}2 & 1\\\ 5 & 3\end{pmatrix}
 \qquad
-B=\begin{pmatrix}0 & 1\\ 1 & 0\end{pmatrix}
+B=\begin{pmatrix}0 & 1\\\ 1 & 0\end{pmatrix}
 \qquad
-C=\begin{pmatrix}4 & 7\\ 2 & 6\end{pmatrix}
+C=\begin{pmatrix}4 & 7\\\ 2 & 6\end{pmatrix}
 $$
 
 **Solution:**
 
-Formula for inverse of $2\times2$ matrix $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$:
+Formula for inverse of $2\times2$ matrix $A = \begin{pmatrix} a & b \\\ c & d \end{pmatrix}$:
 $$
-A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}
+A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\\ -c & a \end{pmatrix}
 $$
 
 **A:**
 $$
-A=\begin{pmatrix}2 & 1\\ 5 & 3\end{pmatrix}, \quad \det(A) = 6 - 5 = 1
+A=\begin{pmatrix}2 & 1\\\ 5 & 3\end{pmatrix}, \quad \det(A) = 6 - 5 = 1
 $$
 $$
-A^{-1} = \frac{1}{1} \begin{pmatrix} 3 & -1 \\ -5 & 2 \end{pmatrix} = \begin{pmatrix} 3 & -1 \\ -5 & 2 \end{pmatrix}
+A^{-1} = \frac{1}{1} \begin{pmatrix} 3 & -1 \\\ -5 & 2 \end{pmatrix} = \begin{pmatrix} 3 & -1 \\\ -5 & 2 \end{pmatrix}
 $$
 
 **B:**
 $$
-B=\begin{pmatrix}0 & 1\\ 1 & 0\end{pmatrix}, \quad \det(B) = 0 - 1 = -1
+B=\begin{pmatrix}0 & 1\\\ 1 & 0\end{pmatrix}, \quad \det(B) = 0 - 1 = -1
 $$
 $$
-B^{-1} = \frac{1}{-1} \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = B
+B^{-1} = \frac{1}{-1} \begin{pmatrix} 0 & -1 \\\ -1 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 1 \\\ 1 & 0 \end{pmatrix} = B
 $$
 
 **C:**
 $$
-C=\begin{pmatrix}4 & 7\\ 2 & 6\end{pmatrix}, \quad \det(C) = 24 - 14 = 10
+C=\begin{pmatrix}4 & 7\\\ 2 & 6\end{pmatrix}, \quad \det(C) = 24 - 14 = 10
 $$
 $$
-C^{-1} = \frac{1}{10} \begin{pmatrix} 6 & -7 \\ -2 & 4 \end{pmatrix} = \begin{pmatrix} 0.6 & -0.7 \\ -0.2 & 0.4 \end{pmatrix}
+C^{-1} = \frac{1}{10} \begin{pmatrix} 6 & -7 \\\ -2 & 4 \end{pmatrix} = \begin{pmatrix} 0.6 & -0.7 \\\ -0.2 & 0.4 \end{pmatrix}
 $$
 
 ### Ex 2. 
@@ -52,13 +52,13 @@ $$
 For the matrices
 
 $$
-A=\begin{pmatrix}1 & 2\\ 2 & 5\end{pmatrix}
+A=\begin{pmatrix}1 & 2\\\ 2 & 5\end{pmatrix}
 \quad
-B=\begin{pmatrix}12& 5\\ 7 & 3\end{pmatrix}
+B=\begin{pmatrix}12& 5\\\ 7 & 3\end{pmatrix}
 \quad
-C=\begin{pmatrix}1 & 2 & 3\\ 0 & 1 & 4\\ 5 & 6 & 0\end{pmatrix}
+C=\begin{pmatrix}1 & 2 & 3\\\ 0 & 1 & 4\\\ 5 & 6 & 0\end{pmatrix}
 \quad
-D=\begin{pmatrix}2 & 0 & 1\\ 1 & 3 & 0\\ 0 & 4 & 5\end{pmatrix}
+D=\begin{pmatrix}2 & 0 & 1\\\ 1 & 3 & 0\\\ 0 & 4 & 5\end{pmatrix}
 $$
 
 calculate the inverse matrices using the methods:
@@ -72,37 +72,37 @@ So for each matrix provide two methods of calculating the inverse matrix (if it 
 
 **Matrix A and B** solved similarly to Ex 1.
 
-$A^{-1} = \begin{pmatrix} 5 & -2 \\ -2 & 1 \end{pmatrix}$
+$A^{-1} = \begin{pmatrix} 5 & -2 \\\ -2 & 1 \end{pmatrix}$
 
-$B^{-1} = \frac{1}{36-35} \begin{pmatrix} 3 & -5 \\ -7 & 12 \end{pmatrix} = \begin{pmatrix} 3 & -5 \\ -7 & 12 \end{pmatrix}$
+$B^{-1} = \frac{1}{36-35} \begin{pmatrix} 3 & -5 \\\ -7 & 12 \end{pmatrix} = \begin{pmatrix} 3 & -5 \\\ -7 & 12 \end{pmatrix}$
 
 **Matrix C:**
 $$
-C=\begin{pmatrix}1 & 2 & 3\\ 0 & 1 & 4\\ 5 & 6 & 0\end{pmatrix}
+C=\begin{pmatrix}1 & 2 & 3\\\ 0 & 1 & 4\\\ 5 & 6 & 0\end{pmatrix}
 $$
 $\det(C) = 1(0-24) - 2(0-20) + 3(0-5) = -24 + 40 - 15 = 1$.
 
 Cofactor matrix:
 $$
 \begin{pmatrix}
--24 & 20 & -5 \\
-18 & -15 & 4 \\
+-24 & 20 & -5 \\\
+18 & -15 & 4 \\\
 5 & -4 & 1
 \end{pmatrix}
 $$
 Inverse (transpose of cofactors / det):
 $$
-C^{-1} = \begin{pmatrix} -24 & 18 & 5 \\ 20 & -15 & -4 \\ -5 & 4 & 1 \end{pmatrix}
+C^{-1} = \begin{pmatrix} -24 & 18 & 5 \\\ 20 & -15 & -4 \\\ -5 & 4 & 1 \end{pmatrix}
 $$
 
 **Matrix D:**
 $$
-D=\begin{pmatrix}2 & 0 & 1\\ 1 & 3 & 0\\ 0 & 4 & 5\end{pmatrix}
+D=\begin{pmatrix}2 & 0 & 1\\\ 1 & 3 & 0\\\ 0 & 4 & 5\end{pmatrix}
 $$
 $\det(D) = 2(15-0) + 1(4-0) = 30+4=34$.
 Inverse:
 $$
-D^{-1} = \frac{1}{34} \begin{pmatrix} 15 & 4 & -3 \\ -5 & 10 & 1 \\ 4 & -8 & 6 \end{pmatrix}
+D^{-1} = \frac{1}{34} \begin{pmatrix} 15 & 4 & -3 \\\ -5 & 10 & 1 \\\ 4 & -8 & 6 \end{pmatrix}
 $$
 
 ### Ex 3. 
@@ -112,7 +112,7 @@ $$
 Check if the matrix
 
 $$
-H=\begin{pmatrix}1 & 2 & 3\\ 2 & 4 & 6\\ 0 & 1 & 1\end{pmatrix}
+H=\begin{pmatrix}1 & 2 & 3\\\ 2 & 4 & 6\\\ 0 & 1 & 1\end{pmatrix}
 $$
 
 is invertible. Justify the answer (use the determinant). Could this have been noticed without calculating the determinant? What would have to happen for the matrix to be invertible?
@@ -120,7 +120,7 @@ is invertible. Justify the answer (use the determinant). Could this have been no
 **Solution:**
 
 $$
-H=\begin{pmatrix}1 & 2 & 3\\ 2 & 4 & 6\\ 0 & 1 & 1\end{pmatrix}
+H=\begin{pmatrix}1 & 2 & 3\\\ 2 & 4 & 6\\\ 0 & 1 & 1\end{pmatrix}
 $$
 Observe row 2 is $2 \times$ row 1 ($R_2 = 2R_1$).
 Therefore, the rows are linearly dependent, so $\det(H) = 0$.
@@ -136,7 +136,7 @@ For a matrix $A$ satisfying $A^{2}=I$ (so-called involution), show that $A^{-1}=
 **Solution:**
 
 If $A^2 = I$, then multiplying by $A^{-1}$ gives $A = A^{-1}$.
-Example: $A = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$. Check $A^2 = I$.
+Example: $A = \begin{pmatrix} 0 & 1 \\\ 1 & 0 \end{pmatrix}$. Check $A^2 = I$.
 Other examples: reflection matrices. Infinitely many.
 
 ### Ex 5. 
