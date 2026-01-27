@@ -232,97 +232,135 @@ $$
 **Solution:**
 
 **a)**
-$\begin{pmatrix} 1 & 4 & 3 & 1 \\\ 2 & 5 & 4 & 4 \\\ 1 & -3 & -2 & 5 \end{pmatrix} \to \begin{pmatrix} 1 & 4 & 3 & 1 \\\ 0 & -3 & -2 & 2 \\\ 0 & 0 & -1/3 & -2/3 \end{pmatrix}$
-$-1/3 z = -2/3 \implies z=2$.
-$-3y - 2(2) = 2 \implies -3y=6 \implies y=-2$.
-$x + 4(-2) + 3(2) = 1 \implies x-8+6=1 \implies x=3$.
-$(3, -2, 2)$.
+Augmented matrix:
+$\begin{pmatrix} 1 & 4 & 3 & 1 \\\ 2 & 5 & 4 & 4 \\\ 1 & -3 & -2 & 5 \end{pmatrix} \xrightarrow{R_2-2R_1, R_3-R_1} \begin{pmatrix} 1 & 4 & 3 & 1 \\\ 0 & -3 & -2 & 2 \\\ 0 & -7 & -5 & 4 \end{pmatrix}$
+Solving the ($2 \times 2$) system for $x_2, x_3$:
+Multiply $R_2$ by 7 and $R_3$ by -3:
+$-21x_2 - 14x_3 = 14$
+$21x_2 + 15x_3 = -12$
+Adding gives $x_3 = 2$.
+Substitute into $R_2$: $-3x_2 - 2(2) = 2 \implies -3x_2 = 6 \implies x_2 = -2$.
+Substitute into $R_1$: $x_1 + 4(-2) + 3(2) = 1 \implies x_1 - 8 + 6 = 1 \implies x_1 = 3$.
+**Answer: $(3, -2, 2)$.**
 
 **b)**
-$\begin{pmatrix} 1 & -2 & -3 & 2 \\\ 1 & -4 & -13 & 14 \\\ -3 & 5 & 4 & 0 \end{pmatrix} \to \dots (3, -1, 1)$. (Example substitution: $3-2(-1)-3(1)=2$, $3-4(-1)-13=3+4-13=-6 \neq 14$. Wait, recalculate).
+$\begin{pmatrix} 1 & -2 & -3 & 2 \\\ 1 & -4 & -13 & 14 \\\ -3 & 5 & 4 & 0 \end{pmatrix} \xrightarrow{R_2-R_1, R_3+3R_1} \begin{pmatrix} 1 & -2 & -3 & 2 \\\ 0 & -2 & -10 & 12 \\\ 0 & -1 & -5 & 6 \end{pmatrix}$
+Divide $R_2$ by 2: $0, -1, -5, 6$.
+Rows 2 and 3 are identical, so we have infinite solutions (dependent system).
+$-x_2 - 5x_3 = 6 \implies x_2 = -6 - 5x_3$.
+Let $x_3 = t$. Then $x_2 = -6 - 5t$.
+$x_1 - 2(-6-5t) - 3t = 2 \implies x_1 + 12 + 10t - 3t = 2 \implies x_1 = -10 - 7t$.
+**Answer: $(-10-7t, -6-5t, t)$.**
 
-Let's solve **b)** properly.
-$R_2-R_1$: $0, -2, -10, 12$. ($y+5z=-6$).
-$R_3+3R_1$: $-3+3, 5-6, 4-9, 0+6 \to 0, -1, -5, 6$. ($y+5z=-6$).
-Infinite solutions. Let $z=t$.
-$y = -6 - 5t$.
-$x - 2(-6-5t) - 3t = 2 \implies x + 12 + 10t - 3t = 2 \implies x = -10 - 7t$.
-Solution: $(-10-7t, -6-5t, t)$.
+**c)**
+System is similar to **b)**, but third equation has RHS $= 2$.
+After same row operations, the last row becomes $0x_1 - x_2 - 5x_3 = 8$ (since $-3(2) + 5 \times 0 + 4 \times 0 + 3 \times 2 \dots$ wait, let's trace properly).
+$R_3+3R_1$ on augmented matrix part: $2 + 3(2) = 8$.
+So we have equations:
+$x_2 + 5x_3 = -6$ (from Row 2)
+$x_2 + 5x_3 = -8$ (from Row 3)
+Contradiction $-6 = -8$.
+**Answer: No solution (inconsistent).**
 
-**c)** Same LHS, RHS is 2 for third eq.
-Previous system reduced to $0=0$ for last row with RHS 0.
-Now RHS is $2+3(2)=8$.
-$0 = 8$. No solution (inconsistent).
+**d)**
+2 equations, 3 unknowns.
+$-4x_1 + 3x_2 + 2x_3 = -2$
+$5x_1 - 4x_2 + x_3 = 3$
+From 2nd: $x_3 = 3 - 5x_1 + 4x_2$.
+Substitute into 1st:
+$-4x_1 + 3x_2 + 2(3 - 5x_1 + 4x_2) = -2$
+$-4x_1 + 3x_2 + 6 - 10x_1 + 8x_2 = -2$
+$-14x_1 + 11x_2 = -8 \implies 11x_2 = 14x_1 - 8$.
+Let $x_1 = t$. Then $x_2 = \frac{14t-8}{11}$.
+$x_3 = 3 - 5t + 4(\frac{14t-8}{11}) = \frac{33-55t+56t-32}{11} = \frac{t+1}{11}$.
+**Answer: Infinite solutions, e.g., $(t, \frac{14t-8}{11}, \frac{t+1}{11})$.**
 
-**d)** 2 equations, 3 unknowns.
-$-4x_1 + 3x_2 + 2x_3 = -2$.
-$5x_1 - 4x_2 + x_3 = 3$.
-Infinite solutions. Parametrize.
-
-**e)** 3 equations, 2 unknowns.
-$-4x_1 + 3x_2 = 2$.
-$5x_1 - 4x_2 = 0 \implies 5x_1=4x_2 \implies x_2 = 1.25 x_1$.
-$-4x_1 + 3(1.25 x_1) = 2 \implies -4x_1 + 3.75x_1 = 2 \implies -0.25x_1 = 2 \implies x_1 = -8$.
-$x_2 = -10$.
-Check 3rd eq: $2(-8) - (-10) = a \implies -16+10 = -6$.
-Solution exists if $a=-6$, then $x_1=-8, x_2=-10$. Else no solution.
+**e)**
+3 equations, 2 unknowns.
+1) $-4x_1 + 3x_2 = 2$
+2) $5x_1 - 4x_2 = 0 \implies x_2 = \frac{5}{4}x_1 = 1.25x_1$.
+Sub into 1): $-4x_1 + 3(1.25x_1) = 2 \implies -4x_1 + 3.75x_1 = 2 \implies -0.25x_1 = 2 \implies x_1 = -8$.
+Then $x_2 = 1.25(-8) = -10$.
+Check 3rd equation: $2x_1 - x_2 = a$.
+$2(-8) - (-10) = -16 + 10 = -6$.
+**Answer: Solution exists if $a=-6$, then $x_1=-8, x_2=-10$. Otherwise no solution.**
 
 **f)**
-$4x_1 + 5x_3 = 6$.
-$x_2 - 6x_3 = -2 \implies x_2 = -2+6x_3$.
-$3x_1 + 4x_3 = 3$.
-From 1 and 3:
-$12x_1 + 15x_3 = 18$.
-$12x_1 + 16x_3 = 12$.
-Subtract: $-x_3 = 6 \implies x_3 = -6$.
-$4x_1 - 30 = 6 \implies 4x_1=36 \implies x_1=9$.
-$x_2 = -2+6(-6) = -38$.
-$(9, -38, -6)$.
+$$
+\begin{cases} 4x_1 + 5x_3 = 6 \\\ x_2 - 6x_3 = -2 \\\ 3x_1 + 4x_3 = 3 \end{cases}
+$$
+From eq 1 and 3 (system of 2 vars $x_1, x_3$):
+$12x_1 + 15x_3 = 18$ ($4 \times$ eq3)
+$12x_1 + 16x_3 = 12$ ($3 \times$ eq1 ... wait, $3 \times 4x_1 = 12x_1$, $4 \times 3x_1 = 12x_1$).
+Let's use determinants or substitution.
+$x_1 = \frac{3 - 4x_3}{3}$.
+$4(\frac{3-4x_3}{3}) + 5x_3 = 6 \implies \frac{12-16x_3}{3} + \frac{15x_3}{3} = 6 \implies 12 - x_3 = 18 \implies x_3 = -6$.
+$x_1 = \frac{3 - 4(-6)}{3} = \frac{27}{3} = 9$.
+$x_2 = -2 + 6x_3 = -2 + 6(-6) = -38$.
+**Answer: $(9, -38, -6)$.**
 
 **g)**
-$3x_1 - x_2 - 2x_3 = 2$.
-$2x_2 - x_3 = -1$.
-$3x_1 - 5x_2 = 3$.
-From 2: $x_3 = 2x_2 + 1$.
-Sub into 1: $3x_1 - x_2 - 2(2x_2+1) = 2 \implies 3x_1 - 5x_2 - 2 = 2 \implies 3x_1 - 5x_2 = 4$.
-Eq 3 is $3x_1 - 5x_2 = 3$.
-Contradiction ($4=3$). No solution.
+$$
+\begin{cases} 3x_1 - x_2 - 2x_3 = 2 \\\ 2x_2 - x_3 = -1 \implies x_3 = 2x_2 + 1 \\\ 3x_1 - 5x_2 = 3 \end{cases}
+$$
+Substitute $x_3$ into eq 1:
+$3x_1 - x_2 - 2(2x_2+1) = 2 \implies 3x_1 - 5x_2 - 2 = 2 \implies 3x_1 - 5x_2 = 4$.
+Compare with eq 3 ($3x_1 - 5x_2 = 3$).
+$4 = 3$ is a contradiction.
+**Answer: No solution.**
 
-**h)** Homogeneous system.
-Determinant of coeff matrix same as b) which was 0 (singular).
-So non-trivial solutions exist.
-Same reduction as b): $-y-5z=0 \implies y=-5z$.
-$x - 2(-5z) - 3z = 0 \implies x + 10z - 3z = 0 \implies x = -7z$.
-Solution: $(-7t, -5t, t)$.
+**h)**
+Homogeneous system corresponding to **b)**.
+Since determinant is 0, non-trivial solutions exist.
+Using reduced form from b): $x_2 + 5x_3 = 0 \implies x_2 = -5x_3$.
+$x_1 - 2x_2 - 3x_3 = 0 \implies x_1 - 2(-5x_3) - 3x_3 = 0 \implies x_1 = -7x_3$.
+Let $x_3 = t$.
+**Answer: $(-7t, -5t, t)$.**
 
-**i)** Homogeneous.
+**i)**
+Homogeneous.
 $4x_2 + 4x_3 = 0 \implies x_2 = -x_3$.
-$2x_1 + 4(-x_3) + 3x_3 = 0 \implies 2x_1 - x_3 = 0 \implies x_1 = 0.5 x_3$.
+$2x_1 + 4x_2 + 3x_3 = 0 \implies 2x_1 - 4x_3 + 3x_3 = 0 \implies 2x_1 = x_3 \implies x_1 = 0.5x_3$.
 $x_1 + x_2 + x_3 = 0.5x_3 - x_3 + x_3 = 0.5x_3 = 0 \implies x_3 = 0$.
-Trivial solution only $(0,0,0)$.
+**Answer: Trivial solution only $(0, 0, 0)$.**
 
 **j)**
-$x_1+x_2+x_3=-2$.
-$2x_1+4x_2-3x_3=3$.
-$4x_2+2x_3=2 \implies 2x_2+x_3=1 \implies x_3=1-2x_2$.
-$x_1+x_2+(1-2x_2)=-2 \implies x_1-x_2=-3 \implies x_1=x_2-3$.
-$2(x_2-3)+4x_2-3(1-2x_2)=3 \implies 2x_2-6+4x_2-3+6x_2=3 \implies 12x_2=12 \implies x_2=1$.
-$x_1 = -2$. $x_3 = -1$.
-$(-2, 1, -1)$.
+$$
+\begin{cases} x_1 + x_2 + x_3 = -2 \\\ 2x_1 + 4x_2 - 3x_3 = 3 \\\ 4x_2 + 2x_3 = 2 \implies 2x_2 + x_3 = 1 \implies x_3 = 1 - 2x_2 \end{cases}
+$$
+Substitute $x_3$ into eq 1:
+$x_1 + x_2 + (1-2x_2) = -2 \implies x_1 - x_2 = -3 \implies x_1 = x_2 - 3$.
+Substitute $x_1, x_3$ into eq 2:
+$2(x_2-3) + 4x_2 - 3(1-2x_2) = 3$
+$2x_2 - 6 + 4x_2 - 3 + 6x_2 = 3$
+$12x_2 - 9 = 3 \implies 12x_2 = 12 \implies x_2 = 1$.
+$x_1 = 1 - 3 = -2$.
+$x_3 = 1 - 2(1) = -1$.
+**Answer: $(-2, 1, -1)$.**
 
 **k)**
-$4x_1+4x_3=8 \implies x_1+x_3=2 \implies x_1=2-x_3$.
-$x_2-6x_3=-3 \implies x_2=6x_3-3$.
-$3(2-x_3)+(6x_3-3)-3x_3=3 \implies 6-3x_3+6x_3-3-3x_3=3 \implies 3=3$.
-Identity. Infinite solutions.
-$x_3=t \implies (2-t, 6t-3, t)$.
+$$
+\begin{cases} 4x_1 + 4x_3 = 8 \implies x_1 + x_3 = 2 \implies x_1 = 2 - x_3 \\\ x_2 - 6x_3 = -3 \implies x_2 = 6x_3 - 3 \\\ 3x_1 + x_2 - 3x_3 = 3 \end{cases}
+$$
+Check eq 3:
+$3(2-x_3) + (6x_3-3) - 3x_3 = 6 - 3x_3 + 6x_3 - 3 - 3x_3 = 3$.
+$3 = 3$ is always true.
+Infinite solutions. Let $x_3 = t$.
+**Answer: $(2-t, 6t-3, t)$.**
 
 **l)**
-$5x_1 - 3x_2 = -7$.
-$-2x_1 + 9x_2 = 4$.
-$2x_1 + 4x_2 = -2 \implies x_1 + 2x_2 = -1 \implies x_1 = -1-2x_2$.
-$5(-1-2x_2) - 3x_2 = -7 \implies -5-10x_2-3x_2=-7 \implies -13x_2=-2 \implies x_2=2/13$.
-$-2(-1-2x_2) + 9x_2 = 4 \implies 2+4x_2+9x_2=4 \implies 13x_2=2 \implies x_2=2/13$.
+$$
+\begin{cases} 5x_1 - 3x_2 = -7 \\\ -2x_1 + 9x_2 = 4 \\\ 2x_1 + 4x_2 = -2 \end{cases}
+$$
+From eq 3: $2x_1 = -2 - 4x_2 \implies x_1 = -1 - 2x_2$.
+Substitute into eq 2:
+$-2(-1-2x_2) + 9x_2 = 4$
+$2 + 4x_2 + 9x_2 = 4$
+$13x_2 = 2 \implies x_2 = \frac{2}{13}$.
+Substitute into eq 1 to check consistency:
+$5(-1-2(\frac{2}{13})) - 3(\frac{2}{13}) = -7$
+$5(-1 - \frac{4}{13}) - \frac{6}{13} = -7$
+$-5 - \frac{20}{13} - \frac{6}{13} = -5 - \frac{26}{13} = -5 - 2 = -7$.
 Consistent.
-$x_1 = -1 - 4/13 = -17/13$.
-$(-17/13, 2/13)$.
+$x_1 = -1 - 2(\frac{2}{13}) = -\frac{13}{13} - \frac{4}{13} = -\frac{17}{13}$.
+**Answer: $(-\frac{17}{13}, \frac{2}{13})$.**
