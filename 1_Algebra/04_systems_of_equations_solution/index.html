@@ -120,42 +120,42 @@
 <p><strong>Problem:</strong></p>
 <p>Solve the system of equations:</p>
 <div class="arithmatex">\[
-\begin{aligned} 2x+3y&amp;=5,\\ x-4y&amp;=-2. \end{aligned}
+\begin{aligned} 2x+3y&amp;=5,\\\ x-4y&amp;=-2. \end{aligned}
 \]</div>
 <p>using the methods: Cramer's rule, Gaussian elimination, and inverse matrix.</p>
 <p><strong>Solution:</strong></p>
 <div class="arithmatex">\[
-\begin{cases} 2x+3y=5 \\ x-4y=-2 \end{cases}
+\begin{cases} 2x+3y=5 \\\ x-4y=-2 \end{cases}
 \]</div>
 <p><strong>1. Cramer's Rule:</strong>
-<span class="arithmatex">\(A = \begin{pmatrix} 2 &amp; 3 \\ 1 &amp; -4 \end{pmatrix}\)</span>. <span class="arithmatex">\(\det(A) = -8 - 3 = -11\)</span>.
-<span class="arithmatex">\(W_x = \det \begin{pmatrix} 5 &amp; 3 \\ -2 &amp; -4 \end{pmatrix} = -20 - (-6) = -14\)</span>.
-<span class="arithmatex">\(W_y = \det \begin{pmatrix} 2 &amp; 5 \\ 1 &amp; -2 \end{pmatrix} = -4 - 5 = -9\)</span>.
+<span class="arithmatex">\(A = \begin{pmatrix} 2 &amp; 3 \\\ 1 &amp; -4 \end{pmatrix}\)</span>. <span class="arithmatex">\(\det(A) = -8 - 3 = -11\)</span>.
+<span class="arithmatex">\(W_x = \det \begin{pmatrix} 5 &amp; 3 \\\ -2 &amp; -4 \end{pmatrix} = -20 - (-6) = -14\)</span>.
+<span class="arithmatex">\(W_y = \det \begin{pmatrix} 2 &amp; 5 \\\ 1 &amp; -2 \end{pmatrix} = -4 - 5 = -9\)</span>.
 <span class="arithmatex">\(x = \frac{-14}{-11} = \frac{14}{11}\)</span>, <span class="arithmatex">\(y = \frac{-9}{-11} = \frac{9}{11}\)</span>.</p>
 <p><strong>2. Gaussian Elimination:</strong>
-augmented matrix <span class="arithmatex">\(\left(\begin{array}{cc|c} 1 &amp; -4 &amp; -2 \\ 2 &amp; 3 &amp; 5 \end{array}\right)\)</span> (Swapped rows).
-<span class="arithmatex">\(R_2 \leftarrow R_2 - 2R_1\)</span>: <span class="arithmatex">\(\left(\begin{array}{cc|c} 1 &amp; -4 &amp; -2 \\ 0 &amp; 11 &amp; 9 \end{array}\right)\)</span>.
+augmented matrix <span class="arithmatex">\(\left(\begin{array}{cc|c} 1 &amp; -4 &amp; -2 \\\ 2 &amp; 3 &amp; 5 \end{array}\right)\)</span> (Swapped rows).
+<span class="arithmatex">\(R_2 \leftarrow R_2 - 2R_1\)</span>: <span class="arithmatex">\(\left(\begin{array}{cc|c} 1 &amp; -4 &amp; -2 \\\ 0 &amp; 11 &amp; 9 \end{array}\right)\)</span>.
 <span class="arithmatex">\(11y = 9 \implies y = \frac{9}{11}\)</span>.
 <span class="arithmatex">\(x - 4(\frac{9}{11}) = -2 \implies x = -2 + \frac{36}{11} = \frac{-22+36}{11} = \frac{14}{11}\)</span>.</p>
 <p><strong>3. Inverse Matrix:</strong>
 <span class="arithmatex">\(X = A^{-1}B\)</span>.
-<span class="arithmatex">\(A^{-1} = \frac{-1}{11} \begin{pmatrix} -4 &amp; -3 \\ -1 &amp; 2 \end{pmatrix}\)</span>.
-<span class="arithmatex">\(X = \frac{-1}{11} \begin{pmatrix} -4 &amp; -3 \\ -1 &amp; 2 \end{pmatrix} \begin{pmatrix} 5 \\ -2 \end{pmatrix} = \frac{-1}{11} \begin{pmatrix} -20+6 \\ -5-4 \end{pmatrix} = \frac{-1}{11} \begin{pmatrix} -14 \\ -9 \end{pmatrix} = \begin{pmatrix} 14/11 \\ 9/11 \end{pmatrix}\)</span>.</p>
+<span class="arithmatex">\(A^{-1} = \frac{-1}{11} \begin{pmatrix} -4 &amp; -3 \\\ -1 &amp; 2 \end{pmatrix}\)</span>.
+<span class="arithmatex">\(X = \frac{-1}{11} \begin{pmatrix} -4 &amp; -3 \\\ -1 &amp; 2 \end{pmatrix} \begin{pmatrix} 5 \\\ -2 \end{pmatrix} = \frac{-1}{11} \begin{pmatrix} -20+6 \\\ -5-4 \end{pmatrix} = \frac{-1}{11} \begin{pmatrix} -14 \\\ -9 \end{pmatrix} = \begin{pmatrix} 14/11 \\\ 9/11 \end{pmatrix}\)</span>.</p>
 <h3 id="ex-2">Ex 2.</h3>
 <p><strong>Problem:</strong></p>
 <p>Solve the system of three equations with three unknowns:</p>
 <div class="arithmatex">\[
-\begin{aligned} x+y+z&amp;=6,\\ 2x-y+3z&amp;=14,\\ -x+2y-z&amp;=-2. \end{aligned}
+\begin{aligned} x+y+z&amp;=6,\\\ 2x-y+3z&amp;=14,\\\ -x+2y-z&amp;=-2. \end{aligned}
 \]</div>
 <p>using the methods: Cramer's rule, Gaussian elimination, and inverse matrix.</p>
 <p><strong>Solution:</strong></p>
 <div class="arithmatex">\[
-\begin{cases} x+y+z=6 \\ 2x-y+3z=14 \\ -x+2y-z=-2 \end{cases}
+\begin{cases} x+y+z=6 \\\ 2x-y+3z=14 \\\ -x+2y-z=-2 \end{cases}
 \]</div>
 <p><strong>Determinant:</strong>
 <span class="arithmatex">\(\det(A) = 1(1-6) - 1(-2+3) + 1(4-1) = -5 - 1 + 3 = -3\)</span>.</p>
 <p><strong>Cramer's Rule:</strong>
-<span class="arithmatex">\(W_x = \det \begin{pmatrix} 6 &amp; 1 &amp; 1 \\ 14 &amp; -1 &amp; 3 \\ -2 &amp; 2 &amp; -1 \end{pmatrix} = 6(1-6) - 1(-14+6) + 1(28-2) = -30 + 8 + 26 = 4\)</span>.
+<span class="arithmatex">\(W_x = \det \begin{pmatrix} 6 &amp; 1 &amp; 1 \\\ 14 &amp; -1 &amp; 3 \\\ -2 &amp; 2 &amp; -1 \end{pmatrix} = 6(1-6) - 1(-14+6) + 1(28-2) = -30 + 8 + 26 = 4\)</span>.
 <span class="arithmatex">\(x = 4/-3 = -4/3\)</span>.</p>
 <p>Other variables: <span class="arithmatex">\(y=4/3, z=6\)</span>.
 Solution: <span class="arithmatex">\(x=-4/3, y=4/3, z=6\)</span>.</p>
@@ -163,17 +163,17 @@ Solution: <span class="arithmatex">\(x=-4/3, y=4/3, z=6\)</span>.</p>
 <p><strong>Problem:</strong></p>
 <p><span class="arithmatex">\(\star\)</span> Consider the parametric system dependent on <span class="arithmatex">\(\lambda\)</span>:</p>
 <div class="arithmatex">\[
-\begin{aligned} x+\lambda y&amp;=1,\\ 2x+(1+\lambda)y&amp;=3. \end{aligned}
+\begin{aligned} x+\lambda y&amp;=1,\\\ 2x+(1+\lambda)y&amp;=3. \end{aligned}
 \]</div>
 <p>Determine the values of <span class="arithmatex">\(\lambda\)</span> for which the system has one solution, infinitely many solutions, or no solution.</p>
 <p><strong>Solution:</strong></p>
 <p>$$
-\begin{cases} x+\lambda y=1 \ 2x+(1+\lambda)y=3 \end{cases}
+\begin{cases} x+\lambda y=1 \\ 2x+(1+\lambda)y=3 \end{cases}
 $$
 <span class="arithmatex">\(\det(A) = 1(1+\lambda) - 2\lambda = 1 + \lambda - 2\lambda = 1 - \lambda\)</span>.
 If <span class="arithmatex">\(\lambda \neq 1\)</span>, one solution.
 If <span class="arithmatex">\(\lambda = 1\)</span>:
-<span class="arithmatex">\(\begin{cases} x+y=1 \\ 2x+2y=3 \end{cases}\)</span>.
+<span class="arithmatex">\(\begin{cases} x+y=1 \\\ 2x+2y=3 \end{cases}\)</span>.
 <span class="arithmatex">\(2(x+y)=2 \neq 3\)</span>. No solution.
 <strong>Summary:</strong>
 - <span class="arithmatex">\(\lambda \neq 1\)</span>: One solution.
@@ -183,17 +183,17 @@ If <span class="arithmatex">\(\lambda = 1\)</span>:
 <p><strong>Problem:</strong></p>
 <p>For the coefficient matrix</p>
 <div class="arithmatex">\[
-A=\begin{pmatrix}1 &amp; 1 &amp; 1\\ 0 &amp; 2 &amp; -1\\ 2 &amp; -1 &amp; 3\end{pmatrix}
+A=\begin{pmatrix}1 &amp; 1 &amp; 1\\\ 0 &amp; 2 &amp; -1\\\ 2 &amp; -1 &amp; 3\end{pmatrix}
 \]</div>
 <p>and the right-hand side vector <span class="arithmatex">\(b=(4,1,3)^{\top}\)</span>, solve <span class="arithmatex">\(Ax=b\)</span> and check the result by substitution.</p>
 <p><strong>Solution:</strong></p>
 <p><span class="arithmatex">\(Ax=b\)</span>.
 $$
-\begin{pmatrix}1 &amp; 1 &amp; 1\ 0 &amp; 2 &amp; -1\ 2 &amp; -1 &amp; 3\end{pmatrix} \begin{pmatrix} x \ y \ z \end{pmatrix} = \begin{pmatrix} 4 \ 1 \ 3 \end{pmatrix}
+\begin{pmatrix}1 &amp; 1 &amp; 1\\ 0 &amp; 2 &amp; -1\\ 2 &amp; -1 &amp; 3\end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 4 \\ 1 \\ 3 \end{pmatrix}
 $$
 Gaussian elimination:
-<span class="arithmatex">\(R_3 \leftarrow R_3 - 2R_1\)</span>: <span class="arithmatex">\(\begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; 4 \\ 0 &amp; 2 &amp; -1 &amp; 1 \\ 0 &amp; -3 &amp; 1 &amp; -5 \end{pmatrix}\)</span>.
-<span class="arithmatex">\(R_3 \leftarrow 2R_3 + 3R_2\)</span>: <span class="arithmatex">\(\begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; 4 \\ 0 &amp; 2 &amp; -1 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; -7 \end{pmatrix}\)</span>.
+<span class="arithmatex">\(R_3 \leftarrow R_3 - 2R_1\)</span>: <span class="arithmatex">\(\begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; 4 \\\ 0 &amp; 2 &amp; -1 &amp; 1 \\\ 0 &amp; -3 &amp; 1 &amp; -5 \end{pmatrix}\)</span>.
+<span class="arithmatex">\(R_3 \leftarrow 2R_3 + 3R_2\)</span>: <span class="arithmatex">\(\begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; 4 \\\ 0 &amp; 2 &amp; -1 &amp; 1 \\\ 0 &amp; 0 &amp; -1 &amp; -7 \end{pmatrix}\)</span>.
 <span class="arithmatex">\(-z = -7 \implies z=7\)</span>.
 <span class="arithmatex">\(2y - 7 = 1 \implies 2y=8 \implies y=4\)</span>.
 <span class="arithmatex">\(x + 4 + 7 = 4 \implies x = -7\)</span>.
@@ -204,107 +204,107 @@ Solution: <span class="arithmatex">\(x=-7, y=4, z=7\)</span>.</p>
 <p>a)
 $$
 \begin{cases}
-x_1 + 4x_2 + 3x_3 = 1, \
-2x_1 + 5x_2 + 4x_3 = 4, \
+x_1 + 4x_2 + 3x_3 = 1, \\
+2x_1 + 5x_2 + 4x_3 = 4, \\
 x_1 - 3x_2 - 2x_3 = 5;
 \end{cases}
 $$</p>
 <p>b)
 $$
 \begin{cases}
-x_1 - 2x_2 - 3x_3 = 2, \
-x_1 - 4x_2 - 13x_3 = 14, \
+x_1 - 2x_2 - 3x_3 = 2, \\
+x_1 - 4x_2 - 13x_3 = 14, \\
 -3x_1 + 5x_2 + 4x_3 = 0;
 \end{cases}
 $$</p>
 <p>c)
 $$
 \begin{cases}
-x_1 - 2x_2 - 3x_3 = 2, \
-x_1 - 4x_2 - 13x_3 = 14, \
+x_1 - 2x_2 - 3x_3 = 2, \\
+x_1 - 4x_2 - 13x_3 = 14, \\
 -3x_1 + 5x_2 + 4x_3 = 2;
 \end{cases}
 $$</p>
 <p>d)
 $$
 \begin{cases}
--4x_1 + 3x_2 + 2x_3 = -2, \
+-4x_1 + 3x_2 + 2x_3 = -2, \\
 5x_1 - 4x_2 + x_3 = 3;
 \end{cases}
 $$</p>
 <p>e)
 $$
 \begin{cases}
--4x_1 + 3x_2 = 2, \
-5x_1 - 4x_2 = 0, \
+-4x_1 + 3x_2 = 2, \\
+5x_1 - 4x_2 = 0, \\
 2x_1 - x_2 = a;
 \end{cases}
 $$</p>
 <p>f)
 $$
 \begin{cases}
-4x_1 + 5x_3 = 6, \
-x_2 - 6x_3 = -2, \
+4x_1 + 5x_3 = 6, \\
+x_2 - 6x_3 = -2, \\
 3x_1 + 4x_3 = 3;
 \end{cases}
 $$</p>
 <p>g)
 $$
 \begin{cases}
-3x_1 - x_2 - 2x_3 = 2, \
-2x_2 - x_3 = -1, \
+3x_1 - x_2 - 2x_3 = 2, \\
+2x_2 - x_3 = -1, \\
 3x_1 - 5x_2 = 3;
 \end{cases}
 $$</p>
 <p>h)
 $$
 \begin{cases}
--x_1 + 2x_2 + 3x_3 = 0, \
-x_1 - 4x_2 - 13x_3 = 0, \
+-x_1 + 2x_2 + 3x_3 = 0, \\
+x_1 - 4x_2 - 13x_3 = 0, \\
 -3x_1 + 5x_2 + 4x_3 = 0;
 \end{cases}
 $$</p>
 <p>i)
 $$
 \begin{cases}
-x_1 + x_2 + x_3 = 0, \
-2x_1 + 4x_2 + 3x_3 = 0, \
+x_1 + x_2 + x_3 = 0, \\
+2x_1 + 4x_2 + 3x_3 = 0, \\
 4x_2 + 4x_3 = 0;
 \end{cases}
 $$</p>
 <p>j)
 $$
 \begin{cases}
-x_1 + x_2 + x_3 = -2, \
-2x_1 + 4x_2 - 3x_3 = 3, \
+x_1 + x_2 + x_3 = -2, \\
+2x_1 + 4x_2 - 3x_3 = 3, \\
 4x_2 + 2x_3 = 2;
 \end{cases}
 $$</p>
 <p>k)
 $$
 \begin{cases}
-4x_1 + 4x_3 = 8, \
-x_2 - 6x_3 = -3, \
+4x_1 + 4x_3 = 8, \\
+x_2 - 6x_3 = -3, \\
 3x_1 + x_2 - 3x_3 = 3;
 \end{cases}
 $$</p>
 <p>l)
 $$
 \begin{cases}
-5x_1 - 3x_2 = -7, \
--2x_1 + 9x_2 = 4, \
+5x_1 - 3x_2 = -7, \\
+-2x_1 + 9x_2 = 4, \\
 2x_1 + 4x_2 = -2;
 \end{cases}
 $$</p>
 <p><strong>Solution:</strong></p>
 <p><strong>a)</strong>
-<span class="arithmatex">\(\begin{pmatrix} 1 &amp; 4 &amp; 3 &amp; 1 \\ 2 &amp; 5 &amp; 4 &amp; 4 \\ 1 &amp; -3 &amp; -2 &amp; 5 \end{pmatrix} \to \begin{pmatrix} 1 &amp; 4 &amp; 3 &amp; 1 \\ 0 &amp; -3 &amp; -2 &amp; 2 \\ 0 &amp; 0 &amp; -1/3 &amp; -2/3 \end{pmatrix}\)</span>
+<span class="arithmatex">\(\begin{pmatrix} 1 &amp; 4 &amp; 3 &amp; 1 \\\ 2 &amp; 5 &amp; 4 &amp; 4 \\\ 1 &amp; -3 &amp; -2 &amp; 5 \end{pmatrix} \to \begin{pmatrix} 1 &amp; 4 &amp; 3 &amp; 1 \\\ 0 &amp; -3 &amp; -2 &amp; 2 \\\ 0 &amp; 0 &amp; -1/3 &amp; -2/3 \end{pmatrix}\)</span>
 <span class="arithmatex">\(-1/3 z = -2/3 \implies z=2\)</span>.
 <span class="arithmatex">\(-3y - 2(2) = 2 \implies -3y=6 \implies y=-2\)</span>.
 <span class="arithmatex">\(x + 4(-2) + 3(2) = 1 \implies x-8+6=1 \implies x=3\)</span>.
 <span class="arithmatex">\((3, -2, 2)\)</span>.</p>
 <p><strong>b)</strong>
-<span class="arithmatex">\(\begin{pmatrix} 1 &amp; -2 &amp; -3 &amp; 2 \\ 1 &amp; -4 &amp; -13 &amp; 14 \\ -3 &amp; 5 &amp; 4 &amp; 0 \end{pmatrix} \to \dots (3, -1, 1)\)</span>. (Example substitution: <span class="arithmatex">\(3-2(-1)-3(1)=2\)</span>, <span class="arithmatex">\(3-4(-1)-13=3+4-13=-6 \neq 14\)</span>. Wait, recalculate).</p>
+<span class="arithmatex">\(\begin{pmatrix} 1 &amp; -2 &amp; -3 &amp; 2 \\\ 1 &amp; -4 &amp; -13 &amp; 14 \\\ -3 &amp; 5 &amp; 4 &amp; 0 \end{pmatrix} \to \dots (3, -1, 1)\)</span>. (Example substitution: <span class="arithmatex">\(3-2(-1)-3(1)=2\)</span>, <span class="arithmatex">\(3-4(-1)-13=3+4-13=-6 \neq 14\)</span>. Wait, recalculate).</p>
 <p>Let's solve <strong>b)</strong> properly.
 <span class="arithmatex">\(R_2-R_1\)</span>: <span class="arithmatex">\(0, -2, -10, 12\)</span>. (<span class="arithmatex">\(y+5z=-6\)</span>).
 <span class="arithmatex">\(R_3+3R_1\)</span>: <span class="arithmatex">\(-3+3, 5-6, 4-9, 0+6 \to 0, -1, -5, 6\)</span>. (<span class="arithmatex">\(y+5z=-6\)</span>).
