@@ -116,7 +116,7 @@ $\vec{v_2} = \vec{ED} = [1, 1, 1]$.
 Normal vector:
 $$
 \begin{aligned}
-\vec{n} = \vec{v_1} \times \vec{v_2} &= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 1 & 2 & 3 \\ 1 & 1 & 1 \end{vmatrix} \\
+\vec{n} = \vec{v_1} \times \vec{v_2} &= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\\ 1 & 2 & 3 \\\ 1 & 1 & 1 \end{vmatrix} \\\
 &= \mathbf{i}(2-3) - \mathbf{j}(1-3) + \mathbf{k}(1-2) = [-1, 2, -1]
 \end{aligned}
 $$

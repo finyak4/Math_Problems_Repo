@@ -18,8 +18,8 @@ Plane $\pi$: $2x-y+z-4=0$.
 Substitute line equations into plane equation:
 $$
 \begin{aligned}
-2(1+2t) - (-1+t) + (3-t) - 4 &= 0 \\
-2 + 4t + 1 - t + 3 - t - 4 &= 0 \\
+2(1+2t) - (-1+t) + (3-t) - 4 &= 0 \\\
+2 + 4t + 1 - t + 3 - t - 4 &= 0 \\\
 2t + 2 = 0 \implies 2t = -2 \implies t &= -1
 \end{aligned}
 $$
@@ -55,7 +55,7 @@ $$
 Cross product:
 $$
 \begin{aligned}
-\vec{v} \times \vec{u} &= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & -1 & 0 \\ 1 & 1 & 1 \end{vmatrix} \\
+\vec{v} \times \vec{u} &= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\\ 2 & -1 & 0 \\\ 1 & 1 & 1 \end{vmatrix} \\\
 &= \mathbf{i}(-1-0) - \mathbf{j}(2-0) + \mathbf{k}(2-(-1)) = [-1, -2, 3]
 \end{aligned}
 $$
