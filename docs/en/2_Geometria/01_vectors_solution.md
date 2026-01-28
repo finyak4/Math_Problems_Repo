@@ -82,8 +82,8 @@ $\mathbf{u}=[1,2,-1]$, $\mathbf{v}=[2,-1,3]$.
 **Cross product:**
 $$
 \begin{aligned}
-\mathbf{u}\times\mathbf{v} &= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 1 & 2 & -1 \\ 2 & -1 & 3 \end{vmatrix} \\
-&= \mathbf{i}(6 - 1) - \mathbf{j}(3 - (-2)) + \mathbf{k}(-1 - 4) \\
+\mathbf{u}\times\mathbf{v} &= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\\ 1 & 2 & -1 \\\ 2 & -1 & 3 \end{vmatrix} \\\
+&= \mathbf{i}(6 - 1) - \mathbf{j}(3 - (-2)) + \mathbf{k}(-1 - 4) \\\
 &= 5\mathbf{i} - 5\mathbf{j} - 5\mathbf{k} = [5, -5, -5]
 \end{aligned}
 $$
@@ -145,8 +145,8 @@ Vectors $\mathbf{v}_1=[2, 1, 2]$ and $\mathbf{v}_2=[-1, 1, 1]$.
 Area of triangle is $\frac{1}{2} \|\mathbf{v}_1 \times \mathbf{v}_2\|$.
 $$
 \begin{aligned}
-\mathbf{v}_1 \times \mathbf{v}_2 &= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & 1 & 2 \\ -1 & 1 & 1 \end{vmatrix} \\
-&= \mathbf{i}(1-2) - \mathbf{j}(2-(-2)) + \mathbf{k}(2-(-1)) \\
+\mathbf{v}_1 \times \mathbf{v}_2 &= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\\ 2 & 1 & 2 \\\ -1 & 1 & 1 \end{vmatrix} \\\
+&= \mathbf{i}(1-2) - \mathbf{j}(2-(-2)) + \mathbf{k}(2-(-1)) \\\
 &= [-1, -4, 3]
 \end{aligned}
 $$
@@ -194,10 +194,18 @@ $$
 **Solution:**
 
 To prove $\mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c}) \mathbf{b} - (\mathbf{a} \cdot \mathbf{b}) \mathbf{c}$.
-Consider the $i$-th component. $ (\mathbf{a} \times (\mathbf{b} \times \mathbf{c}))_i = \sum \epsilon_{ijk} a_j (\mathbf{b} \times \mathbf{c})_k = \sum \epsilon_{ijk} a_j (\sum \epsilon_{klm} b_l c_m) $.
-Using identity $\epsilon_{ijk} \epsilon_{klm} = \epsilon_{kij} \epsilon_{klm} = \delta_{il}\delta_{jm} - \delta_{im}\delta_{jl}$.
-This expands to $a_j b_i c_j - a_j b_j c_i = (\sum a_j c_j) b_i - (\sum a_j b_j) c_i = (\mathbf{a}\cdot\mathbf{c})b_i - (\mathbf{a}\cdot\mathbf{b})c_i$.
-Thus the identity holds.
+
+Consider the $i$-th component of the expression. We express the cross product using the Levi-Civita symbol $\epsilon_{ijk}$:
+
+$$
+\begin{aligned} (\mathbf{a} \times (\mathbf{b} \times \mathbf{c}))_i &= \sum_{j,k} \epsilon_{ijk} a_j (\mathbf{b} \times \mathbf{c})_k = \sum_{j,k} \epsilon_{ijk} a_j \left(\sum_{l,m} \epsilon_{klm} b_l c_m\right) \\\ &= \sum_{j,k,l,m} \epsilon_{ijk} \epsilon_{klm} a_j b_l c_m \\\ &= \sum_{j,l,m} (\delta_{il}\delta_{jm} - \delta_{im}\delta_{jl}) a_j b_l c_m \\\ &= \sum_{j,l,m} \delta_{il}\delta_{jm} a_j b_l c_m - \sum_{j,l,m} \delta_{im}\delta_{jl} a_j b_l c_m \\\ &= b_i \left(\sum_{j} a_j c_j\right) - c_i \left(\sum_{j} a_j b_j\right) \\\ &= (\mathbf{a}\cdot\mathbf{c}) b_i - (\mathbf{a}\cdot\mathbf{b}) c_i \end{aligned}
+$$
+
+This holds for all components $i$, so:
+$$
+\mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c}) \mathbf{b} - (\mathbf{a} \cdot \mathbf{b}) \mathbf{c}
+$$
+Q.E.D.
 
 ### Ex 11.  
 
@@ -213,7 +221,7 @@ $\mathbf{v}=[-1,3,0]$, $\mathbf{u}=[0,1,1]$.
 Vector perpendicular to both is parallel to their cross product.
 $$
 \begin{aligned}
-\mathbf{n} = \mathbf{v} \times \mathbf{u} &= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ -1 & 3 & 0 \\ 0 & 1 & 1 \end{vmatrix} \\
+\mathbf{n} = \mathbf{v} \times \mathbf{u} &= \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\\ -1 & 3 & 0 \\\ 0 & 1 & 1 \end{vmatrix} \\\
 &= \mathbf{i}(3-0) - \mathbf{j}(-1-0) + \mathbf{k}(-1-0) = [3, 1, -1]
 \end{aligned}
 $$
