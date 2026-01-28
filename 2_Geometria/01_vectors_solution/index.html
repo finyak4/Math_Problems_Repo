@@ -197,8 +197,8 @@ $$</p>
 <p><strong>Cross product:</strong>
 $$
 \begin{aligned}
-\mathbf{u}\times\mathbf{v} &amp;= \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \ 1 &amp; 2 &amp; -1 \ 2 &amp; -1 &amp; 3 \end{vmatrix} \
-&amp;= \mathbf{i}(6 - 1) - \mathbf{j}(3 - (-2)) + \mathbf{k}(-1 - 4) \
+\mathbf{u}\times\mathbf{v} &amp;= \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ 1 &amp; 2 &amp; -1 \\ 2 &amp; -1 &amp; 3 \end{vmatrix} \\
+&amp;= \mathbf{i}(6 - 1) - \mathbf{j}(3 - (-2)) + \mathbf{k}(-1 - 4) \\
 &amp;= 5\mathbf{i} - 5\mathbf{j} - 5\mathbf{k} = [5, -5, -5]
 \end{aligned}
 $$</p>
@@ -238,8 +238,8 @@ Unit vector: <span class="arithmatex">\(\hat{\mathbf{c}} = [\frac{1}{\sqrt{14}},
 Area of triangle is <span class="arithmatex">\(\frac{1}{2} \|\mathbf{v}_1 \times \mathbf{v}_2\|\)</span>.
 $$
 \begin{aligned}
-\mathbf{v}_1 \times \mathbf{v}_2 &amp;= \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \ 2 &amp; 1 &amp; 2 \ -1 &amp; 1 &amp; 1 \end{vmatrix} \
-&amp;= \mathbf{i}(1-2) - \mathbf{j}(2-(-2)) + \mathbf{k}(2-(-1)) \
+\mathbf{v}_1 \times \mathbf{v}_2 &amp;= \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ 2 &amp; 1 &amp; 2 \\ -1 &amp; 1 &amp; 1 \end{vmatrix} \\
+&amp;= \mathbf{i}(1-2) - \mathbf{j}(2-(-2)) + \mathbf{k}(2-(-1)) \\
 &amp;= [-1, -4, 3]
 \end{aligned}
 $$
@@ -270,11 +270,16 @@ Midpoint <span class="arithmatex">\(M = \frac{A+B}{2} = (\frac{-1+3}{2}, \frac{2
 \mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c}) \mathbf{b} - (\mathbf{a} \cdot \mathbf{b}) \mathbf{c}.
 \]</div>
 <p><strong>Solution:</strong></p>
-<p>To prove <span class="arithmatex">\(\mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c}) \mathbf{b} - (\mathbf{a} \cdot \mathbf{b}) \mathbf{c}\)</span>.
-Consider the <span class="arithmatex">\(i\)</span>-th component. $ (\mathbf{a} \times (\mathbf{b} \times \mathbf{c}))<em>i = \sum \epsilon</em>{ijk} a_j (\mathbf{b} \times \mathbf{c})<em>k = \sum \epsilon</em>{ijk} a_j (\sum \epsilon_{klm} b_l c_m) $.
-Using identity <span class="arithmatex">\(\epsilon_{ijk} \epsilon_{klm} = \epsilon_{kij} \epsilon_{klm} = \delta_{il}\delta_{jm} - \delta_{im}\delta_{jl}\)</span>.
-This expands to <span class="arithmatex">\(a_j b_i c_j - a_j b_j c_i = (\sum a_j c_j) b_i - (\sum a_j b_j) c_i = (\mathbf{a}\cdot\mathbf{c})b_i - (\mathbf{a}\cdot\mathbf{b})c_i\)</span>.
-Thus the identity holds.</p>
+<p>To prove <span class="arithmatex">\(\mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c}) \mathbf{b} - (\mathbf{a} \cdot \mathbf{b}) \mathbf{c}\)</span>.</p>
+<p>Consider the <span class="arithmatex">\(i\)</span>-th component of the expression. We express the cross product using the Levi-Civita symbol <span class="arithmatex">\(\epsilon_{ijk}\)</span>:</p>
+<div class="arithmatex">\[
+\begin{aligned} (\mathbf{a} \times (\mathbf{b} \times \mathbf{c}))_i &amp;= \sum_{j,k} \epsilon_{ijk} a_j (\mathbf{b} \times \mathbf{c})_k = \sum_{j,k} \epsilon_{ijk} a_j \left(\sum_{l,m} \epsilon_{klm} b_l c_m\right) \\\ &amp;= \sum_{j,k,l,m} \epsilon_{ijk} \epsilon_{klm} a_j b_l c_m \\\ &amp;= \sum_{j,l,m} (\delta_{il}\delta_{jm} - \delta_{im}\delta_{jl}) a_j b_l c_m \\\ &amp;= \sum_{j,l,m} \delta_{il}\delta_{jm} a_j b_l c_m - \sum_{j,l,m} \delta_{im}\delta_{jl} a_j b_l c_m \\\ &amp;= b_i \left(\sum_{j} a_j c_j\right) - c_i \left(\sum_{j} a_j b_j\right) \\\ &amp;= (\mathbf{a}\cdot\mathbf{c}) b_i - (\mathbf{a}\cdot\mathbf{b}) c_i \end{aligned}
+\]</div>
+<p>This holds for all components <span class="arithmatex">\(i\)</span>, so:
+$$
+\mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c}) \mathbf{b} - (\mathbf{a} \cdot \mathbf{b}) \mathbf{c}
+$$
+Q.E.D.</p>
 <h3 id="ex-11">Ex 11.</h3>
 <p><strong>Problem:</strong></p>
 <p>Find the most general form of a vector that is simultaneously perpendicular to</p>
@@ -284,7 +289,7 @@ Thus the identity holds.</p>
 Vector perpendicular to both is parallel to their cross product.
 $$
 \begin{aligned}
-\mathbf{n} = \mathbf{v} \times \mathbf{u} &amp;= \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \ -1 &amp; 3 &amp; 0 \ 0 &amp; 1 &amp; 1 \end{vmatrix} \
+\mathbf{n} = \mathbf{v} \times \mathbf{u} &amp;= \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ -1 &amp; 3 &amp; 0 \\ 0 &amp; 1 &amp; 1 \end{vmatrix} \\
 &amp;= \mathbf{i}(3-0) - \mathbf{j}(-1-0) + \mathbf{k}(-1-0) = [3, 1, -1]
 \end{aligned}
 $$
