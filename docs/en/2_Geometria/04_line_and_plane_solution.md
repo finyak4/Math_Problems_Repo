@@ -97,6 +97,9 @@ $1 + 2 - 3 = 0$. Yes.
 So for $\lambda = 1$, the line is **contained** in the plane.
 
 **Summary:**
+
 - **Parallel (no intersection):** Never.
+
 - **Contained:** For $\lambda = 1$.
+
 - **Intersects at single point:** For $\lambda \neq 1$.

@@ -37,6 +37,7 @@ $$
 $$
 3B = \begin{pmatrix}0 & -3\\\ 6 & 3\end{pmatrix}
 $$
+
 $$
 3B-2A = \begin{pmatrix}0-2 & -3-4\\\ 6-6 & 3-8\end{pmatrix} = \begin{pmatrix}-2 & -7\\\ 0 & -5\end{pmatrix}
 $$
